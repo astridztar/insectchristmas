@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>insect.christmas ʚïɞ</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+    <body onload="onPageLoaded()" class="chart">
+        <div class="p1">
+            <h1>insect.christmas ʚïɞ</h1>
+            <b class="smallMargins">home - status:</b>
+            <p class="smallMargins">now free from website editors!</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>* <a href="index.html">home</a></th>
+                        <th><a href="art.html">art</a></th>
+                        <th><a href="blog.html">blog</a></th>
+                        <th><a href="games.html">games</a></th>
+                        <th><a href="music.html">music</a></th>
+                        <th><a href="podcasts.html">podcasts</a></th>
+                        <th><a href="video.html">video</a></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="p1">
+            <h2 class="purple">🎄about:</h2>
+            <p class="smallMargins">
+                <b>name:</b> astrid★<br />
+                <b>pronouns:</b> she/they<br />
+                <b>hobbies:</b> art, music<br />
+                <b>occupation:</b> internet<br /><br />
+                
+                <b>main links:</b>
+                <a href="https://linktr.ee/aztrosist">linktree link</a><br>
+                <b>updates:</b> <a href="https://discord.gg/insectchristmas">discord link</a>
+            </p>
+            <br />
+            <button class="collapsible">
+                <b>expand -></b> learn more about me
+            </button>
+            <div class="content">
+                <p>> <b>aesthetics:</b> bugs, halloween<br>
+                    > <b>fav media:</b> death grips, evangelion, machine girl, pokémon
+                    <br>
+                    > <b>ideas:</b> leftism, open source
+                    <br>
+                    > <b>identity:</b> enby, transfem
+                </p>
+            </div>
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.maxHeight) {
+                            content.style.maxHeight = null;
+                        } else {
+                            content.style.maxHeight =
+                                content.scrollHeight + "px";
+                        }
+                    });
+                }
+            </script>
+        </div>
+    </body>
+</html>
