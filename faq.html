@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <video autoplay muted loop src="videos/stars.mp4"></video>
+    <head>
+        <title>insect.christmas &#666;&iuml;&#606;</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+    <body onload="onPageLoaded()" class="chart">
+        <div class="p1">
+            <h1>insect.christmas &#666;&iuml;&#606;</h1>
+            <b class="smallMargins">faq - status:</b>
+           <p class="smallMargins">the internet of tings</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th><a href="https://insect.christmas">home</a></th>
+                        <th><a href="https://insect.christmas/art">art</a></th>
+                        <th><a href="https://insect.christmas/blog">blog</a></th>
+                        <th><a href="https://insect.christmas/games">games</a></th>
+                        <th><a href="https://insect.christmas/music">music</a></th>
+                        <th><a href="https://insect.christmas/podcasts">podcasts</a></th>
+                                                <th><a href="https://insect.christmas/stream">stream</a></th>
+                        <th><a href="https://insect.christmas/video">video</a></th>
+                        <th>* <a href="https://insect.christmas/faq">faq</a></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="p1" class="chart">
+            <h2 class="purple">frequently asked questions:</h2><br>
+            
+            <b>Q: identity? pronouns? huh?<br>A: i am non-binary, transgender girl (<a href="https://gender.fandom.com/wiki/Transfeminine">transfem</a>) [she/they]<br></b><br>
+            <b>Q: how do i book you for art/music?<br>A: email joshfloorguy@gmail.com</b><br><br>
+              <b>Q: what is insect.christmas?<br>A: a website to put everything on that i can do anything with <br>fuck social media & modern web</b><br><br>
+              <b>Q: where is [insert thing here] that you made?<br>A: idk get over it</b><br><br>
+              <b>Q: how do i contact you for [insert thing here]?<br>A: email aztrosist.business@gmail.com</b><br><br>
+              <b>Q: what'd you go to school for?<br>A: i have a b.a.s. in computer science</b><br><br>
+              <b>Q: favorite [insert thing here]?<br>A: 
+            <button class="collapsible">
+                <b>click here -> huge list</b>
+            </button>
+            <div class="content">
+                <p>
+                <b>favorite animal: &nbsp;cat<br>favorite bug: &nbsp;&nbsp;&nbsp;&nbsp;brood x cicada<br>favorite food: &nbsp;&nbsp;&nbsp;spicy hummus<br>favorite fruit: &nbsp;&nbsp;strawberries<br>favorite game: &nbsp;&nbsp;&nbsp;pokemon crystal<br>favorite pokemon: scizor</b>
+                </p>
+            </div>
+            <br><b>Q:<br>A:</b>
+
+        </div>
+        <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.maxHeight) {
+                            content.style.maxHeight = null;
+                        } else {
+                            content.style.maxHeight =
+                                content.scrollHeight + "px";
+                        }
+                    });
+                }
+            </script>
+    </body>
+</html>

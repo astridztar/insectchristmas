@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <video autoplay muted loop src="videos/stars.mp4"></video>
+    <head>
+        <title>insect.christmas &#666;&iuml;&#606;</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+    <body onload="onPageLoaded()" class="chart">
+        <div class="p1">
+            <h1>insect.christmas &#666;&iuml;&#606;</h1>
+            <b class="smallMargins">stream - status:</b>
+            <p class="smallMargins">streaming whatever i want! <a href="https://x.com/aztrosist/status/1748904474704236943?s=20">smoking a cigar</a> !!</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th><a href="https://insect.christmas">home</a></th>
+                        <th><a href="https://insect.christmas/art">art</a></th>
+                        <th><a href="https://insect.christmas/blog">blog</a></th>
+                        <th><a href="https://insect.christmas/games">games</a></th>
+                        <th><a href="https://insect.christmas/music">music</a></th>
+                        <th><a href="https://insect.christmas/podcasts">podcasts</a></th>
+                        <th>* <a href="https://insect.christmas/stream">stream</a></th>
+                        <th><a href="https://insect.christmas/video">video</a></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="p1">
+                        <h1 style="color:purple">twitch stream feed (live):</h1>
+            <b><a href="https://subs.twitch.tv/aztrosist">[subscribe for $5/mo]</a>, <a href="https://streamelements.com/aztrosist/tip">[donate to the stream]</a></b><br><br>
+        </div>
+        <!-- Add a placeholder for the Twitch embed -->
+        <div id="twitch-embed" style="padding-left: 0px"></div>
+        <!-- Load the Twitch embed JavaScript file -->
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+        <script type="text/javascript">
+            new Twitch.Embed("twitch-embed", {
+                width: 1280,
+                height: 720,
+                channel: "aztrosist",
+                // Only needed if this page is going to be embedded on other websites
+                parent: ["insect.christmas"]
+            });
+        </script>
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.maxHeight) {
+                            content.style.maxHeight = null;
+                        } else {
+                            content.style.maxHeight =
+                                content.scrollHeight + "px";
+                        }
+                    });
+                }
+            </script>
+        </div>
+    </body>
+</html>
