@@ -8,6 +8,15 @@
     padding: 0px 10px;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  float: right;
+  margin: 100px 100px 0px 0px;
+}
+
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 180px; /* Set the width of the sidebar */
@@ -20,9 +29,72 @@
   padding-left: 20px;
 }
 
+.makeSpace {
+    margin-left: 240px;
+}
+
 .smallMargins {
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.smallMargins2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.sidebarRight {
+    float: right;
+    height: 100%;
+    width: 360px;
+    z-index: 1;
+    overflow: hidden;
+    
+    right: 0;
+    top: 0;
+}
+
+.linkbarRight {
+    float: right;
+    height: 65%;
+    width: 250px;
+    z-index: 1;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: black;
+    margin-right: 100px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.mainbarLeft {
+    float: left;
+    height: 95%;
+    width: 260px;
+    z-index: 1;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: transparent;
+    margin-left: 15px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.moveToLeft {
+    float: left;
+    height: 100%;
+    width: 265px;
+    z-index: 1;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: transparent;
+    text-align: center;
 }
 
 .chart {
@@ -30,7 +102,12 @@
 }
 
 .purple {
-    color: purple;
+    color: slateblue;
+    font-family: monospace;
+}
+
+.littlefucker {
+
 }
 
 a {
@@ -38,15 +115,11 @@ a {
 }
 
 img {
-    cursor: crosshair;
-    
-    
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 body {
-    cursor: crosshair;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 10px;
@@ -65,15 +138,16 @@ h2 {
 
 table {
   border-collapse: collapse;
-  border: 2px solid rgb(140 140 140);
+  border: 2px solid chartreuse;
   font-family: sans-serif;
   font-size: 0.8rem;
   letter-spacing: 1px;
+  
 }
 
 th,
 td {
-  border: 1px solid rgb(167 135 255);
+  border: 1px solid chartreuse;
   padding: 8px 10px;
 }
 
@@ -84,6 +158,10 @@ video {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+}
+
+audio {
+    opacity: 50%;
 }
 
 html {

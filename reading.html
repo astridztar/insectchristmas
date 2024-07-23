@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <video autoplay muted loop src="videos/stars.mp4"></video>
+    <head>
+        <img src="images/earth.gif" align="left" height="71" border="5">
+        <title>insect.christmas &#666;&iuml;&#606;</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+    <body onload="onPageLoaded()" class="chart" style="margin-left: 240px;">
+        <div class="p1">
+            <h1>&nbsp;insect.christmas &#666;&iuml;&#606;</h1>
+            <b class="smallMargins">&nbsp;&nbsp;&nbsp;reading - status:</b>
+           <p class="smallMargins">&nbsp;&nbsp;&nbsp;baldbasdbasdbasjdb!!!!!</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th><a href="https://insect.christmas">home</a></th>
+                        <th><a href="https://insect.christmas/art">art</a></th>
+                        <th><a href="https://insect.christmas/blog">blog</a></th>
+                        <th><a href="https://insect.christmas/games">games</a></th>
+                        <th><a href="https://insect.christmas/music">music</a></th>
+                        <th><a href="https://insect.christmas/podcasts">podcasts</a></th>
+                                                <th><a href="https://insect.christmas/stream">stream</a></th>
+                        <th><a href="https://insect.christmas/video">video</a></th>
+                        <th>* <a href="https://insect.christmas/reading">reading</a></th>
+                        <th style="width:100px;height:20px;"><audio controls loop autoplay id="audioA" style="height:50%;width:50%;">
+                            <source src="audio/vita.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                            </audio></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="p1" class="chart"><br>
+            <h2>books/lectures:</h2>
+            <button class="collapsible">
+                <b>expand -></b> view books
+            </button>
+            <p class="content">
+                > i'm mostly interested in non-fiction<br>
+                (political/psychology/history/science)<br><br>
+                <b>completed reads:</b><br>
+                > (2021) astrid ronaldson, mao zedong - mao zedong: the complete works volume 1<br>
+                > (2019) leigh phillips, michael rozworski - the people's republic of walmart<br>
+                > (2011) daniel kahneman - thinking, fast and slow<br>
+                > (1997) michael parenti - blackshirts & reds<br>
+                > (1982) benjamin hoff - the tao of pooh<br>
+                > (1975) muammar gaddafi - green book<br>
+                > (1969) mick costello - workers' participation in the soviet union<br>
+                > (1917) vladimir lenin - the state and revolution<br>
+                > (1848) karl marx, friedrich engels - the communist manifesto<br><br>
+                
+                <b>working through:</b><br>
+                > (2023) ken hammond - china's revolution & the quest for a socialist future<br>
+                > (2023) ted jordan - linux+ cert exam guide<br>
+                > (2004) robert sapolsky - why zebras don't get ulcers<br>
+                > (1982) chris harman - the lost revolution<br>
+                > (1867) karl marx - das kapital
+                
+                <br><br>
+                
+                <b>future reads:</b><br>
+                > (2020) bhaskar sunkara - the socialist manifesto<br>
+                > (2015) bruni de la motte - stasi state or socialist paradise?<br>
+                > (2015) howard zinn - a people's history of the united states<br>
+                > (2014) scott richard shaw - planet of the bugs<br>
+                > (2014) xi jinping - the governance of china i<br>
+                > (2010) jon lee anderson - che<br>
+                > (2002) michael parenti - the terrorism trap<br>
+                > (1995) michael parenti - against empire<br>
+                > (1866) fyodor dostoevsky - crime and punishment
+                
+                <br><br>
+                
+                <b>great lectures/speakings:<br>
+                > <a href="https://www.youtube.com/watch?v=s6ym9B6I3UM">[howard zinn: the myth of american exceptionalism]</a><br>
+                > <a href="https://www.youtube.com/watch?v=FZqwlNpXelg">[michael parenti: creating a sustainable economy]</a><br>
+                > <a href=" https://www.youtube.com/watch?v=OOF56wYTl1w">[michael parenti: the darker myths of empire]</a><br>
+                > <a href="https://www.youtube.com/watch?v=XlhFMa4t28A">[richard wolff: the game is rigged]</a><br>
+                > <a href="https://www.youtube.com/watch?v=eU-AkeOyiOQ">[richard wolff: understanding marxism]</a><br>
+                > <a href="https://www.youtube.com/playlist?list=PL848F2368C90DDC3D">[robert sapolsky: human behavioral biology]</a></b>
+            </p>
+            <h2>manga:</h2>
+            <button class="collapsible">
+                <b>expand -></b> view manga
+            </button>
+            <p class="content">
+                <b>currently reading:</b><br>
+                > berserk (ch369), chainsaw man (ch152), dandadan (ch119), hunter x hunter (ch400), ichonse-ke no taizai(ch36/48), jujutsu kaisen (ch242), kagurabachi (ch3), one piece (ch121), one punch-man (ch182), vinland saga (ch199)
+                <br><br>
+                <b>completed (a-z):</b><br>
+                > layers of fear, **naruto, *shingeki no kyojin, *three days of happiness 
+            </p>
+            <h2>podcasts:</h2>
+            <button class="collapsible">
+                <b>expand -></b> view podcasts
+            </button>
+            <p class="content">
+                <b>cool podcasts:</b><br>
+                > (2016-????) chapo trap house<br>
+                > (2020-????) blowback<br>
+                > (2020-2023) cushvlog<br>
+                > (2021) hell of presidents<br>
+            </p>
+            <a><img src="https://web.archive.org/web/20091027073140/http://geocities.com/scareyhalloween/HalloweenlightsBar.gif"></a>
+        </div>
+        <object data="nav.html" class="moveToLeft"></object>
+        <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+                
+                let aud = document.getElementById("audioA");
+                aud.volume = 0.1; 
+                aud.autoplay = true;
+                aud.loop = true;
+
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.maxHeight) {
+                            content.style.maxHeight = null;
+                        } else {
+                            content.style.maxHeight =
+                                content.scrollHeight + "px";
+                        }
+                    });
+                }
+            </script>
+    </body>
+</html>
