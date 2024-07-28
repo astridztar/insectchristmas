@@ -58,12 +58,10 @@
     float: right;
     height: 65%;
     width: 250px;
-    z-index: 1;
-    overflow: hidden;
     position: fixed;
     right: 0;
     top: 0;
-    background: black;
+    background: transparent;
     margin-right: 100px;
     margin-top: 150px;
     text-align: center;
@@ -112,6 +110,10 @@
 
 a {
     color:coral;
+}
+
+a:hover {
+  background-color: black;
 }
 
 img {
@@ -189,7 +191,7 @@ html {
   max-height: 0;
   overflow: hidden;
   padding: 1px;
-  width: 32%;
+  width: 50%;
   transition: max-height 0.2s ease-out;
   background-color: #121112;
   font-family: monospace;
