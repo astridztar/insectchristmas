@@ -1,9 +1,6 @@
 # insect.christmas
 
-- this is a mirror of the html, css & js files from https://insect.christmas
-- last updated: 07/28/2024
+a mirror of the html, css & js files from https://insect.christmas
+last updated: 07/28/2024
 
 ![insect.christmas screenshot](https://insect.christmas/images/github/insectchristmas.png)
-
-TO-DO:
-- more ladybug implementation
