@@ -6,4 +6,4 @@
 ![insect.christmas screenshot](https://insect.christmas/images/github/insectchristmas.png)
 
 TO-DO:
-- ???
+- more ladybug implementation
