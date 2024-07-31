@@ -1,6 +1,6 @@
 # insect.christmas
 
-a mirror of the html, css & js files from https://insect.christmas
+an official mirror of the html, css & js files from https://insect.christmas
 
 last updated: 07/28/2024
 
