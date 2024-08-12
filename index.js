@@ -7,7 +7,7 @@
             var ladybug = Math.floor(Math.random() * 512000);
             
             // test hard-coded
-            //var ladybug = 1001;
+            //var ladybug = 666;
             
             // set littlefucker to display ladybug pull
             document.getElementById("littlefucker").innerHTML = ladybug.toString();
