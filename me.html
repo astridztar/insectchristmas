@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <video autoplay muted loop src="videos/stars.mp4" id="stars"></video>
+    <head>
+        <img src="images/earth.gif" style="margin-top:11px;" align="left" height="71" border="2">
+        <title>insect.christmas &#666;&iuml;&#606;</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <script src="script.js"></script>
+    </head>
+    <body id="body" onload="onPageLoaded()" class="chart" style="margin-left: 240px">
+        
+        <div class="p1" id="topbar">
+            <h1><b id="rainbow">&nbsp;insect.christmas</b> &#666;&iuml;&#606;</h1>
+            <b class="smallMargins">&nbsp;&nbsp;&nbsp;me - status:</b>
+            <p class="smallMargins2">&nbsp;&nbsp;&nbsp;astrid ztar's rotation</p>
+            
+            <table >
+                <thead>
+                    <tr>
+                        <th><a href="https://insect.christmas">home</a></th>
+                        <th><a href="https://insect.christmas/art">art</a></th>
+                        <th><a href="https://insect.christmas/games">games</a></th>
+                        <th><a href="https://insect.christmas/music">music</a></th>
+                        <th><a href="https://insect.christmas/video">video</a></th>
+                        <th><a href="https://insect.christmas/writing">writing</a></th>
+                        <th>* <a href="https://insect.christmas/me">me</a></th>
+                        <th style="width:100px;height:20px;"><audio controls loop autoplay id="audioA" style="height:50%;width:50%;">
+                            <source src="audio/kokubo.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                            </audio> </th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="p1" id="pageContent">
+            <h2 style="color: slateblue">hobbies:</h2> 
+            <p class="smallMargins">
+                > gaming & speedrunning<br>
+                > music & music production<br>
+                > pen & paper drawing<br>
+                > reading & writing<br>
+                > webdev & programming<br>
+            </p>
+            
+            <h2 style="color: slateblue">interests:</h2> 
+            <p class="smallMargins">
+                > insects & animals<br>
+                > psychology<br>
+            </p>
+            
+            <h2 style="color: slateblue">philosophy:</h2> 
+            <p class="smallMargins">
+                > leftism & socialism<br>
+                > open-source & free software<br>
+                > queer identity<br>
+                > vegetarianism<br>
+            </p>
+            
+            <h2 style="color: slateblue">studying:</h2>
+            <p class="smallMargins">
+                > linux & programming<br>
+                > mandarin chinese<br>
+                > political theory & history<br>
+            </p>
+            
+            <h2 style="color: slateblue">work:</h2>
+            <p class="smallMargins">
+                > livestreaming<br>
+                > script writing & vo<br>
+                > video production<br>
+            </p>
+            
+            <img src="images/halloweenBar.gif" id="halloweenBar" style="margins: 0;">
+        </div>
+        
+        <object data="nav.html" class="moveToLeft"></object>
+        <script>
+            let aud = document.getElementById("audioA");
+                aud.volume = 0.1; 
+                aud.autoplay = true;
+                aud.loop = true;
+        </script>
+        <script type="module">
+          
+            window.addEventListener("load", (event) => { new cursoreffects.rainbowCursor(); });
+        </script>
+    </body>
+
+</html>
