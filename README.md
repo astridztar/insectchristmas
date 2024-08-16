@@ -4,7 +4,7 @@ an official mirror of the public html, css & js files from https://insect.christ
 
 last updated: 08/16/2024
 
-![insect.christmas screenshot](https://insect.christmas/images/github/ic.png)
+![insect.christmas screenshot](https://insect.christmas/images/github/insectchristmas08162024.png)
 
 # cool features
 - randomized ladybug roll on index page (roll for random effects)
