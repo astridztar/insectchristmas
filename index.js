@@ -180,7 +180,7 @@
             // make sure audio does not earrape
             if(ladybug != 197699) {
                            let aud = document.getElementById("audioA");
-                aud.volume = 0.1; 
+                aud.volume = 0.13; 
                 aud.autoplay = true;
                 aud.loop = true; 
             }
