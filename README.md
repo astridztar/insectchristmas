@@ -2,7 +2,7 @@
 
 an official mirror of the public html, css & js files from https://insect.christmas
 
-last updated: 08/16/2024
+last updated: 09/01/2024
 
 ![insect.christmas screenshot](https://insect.christmas/images/github/insectchristmas08162024.png)
 
