@@ -2,7 +2,7 @@
 <html lang="en">
     <video autoplay muted loop src="videos/stars.mp4" id="stars"></video>
     <head>
-        <img src="images/ic/icbig.gif" title="izzy :>" style="margin-top:11px;" align="left" height="104" border="2" alt="izzy the bug: :>">
+        <img src="images/ic/icbig.gif" title="izzy :>" style="margin-top:11px;" align="left" height="104" border="2" alt="izzy the bug: :>" id="izzy">
         <title>insect.christmas &#666;&iuml;&#606;</title>
         <link rel="stylesheet" href="styles.css" />
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
@@ -37,25 +37,32 @@
             </table>
         </div>
         <div class="p1" id="pageContent">
-            <br>
-            <b id="squid">C:=</b><br>
-            (animated cephalopod)
-            <br>
+            <div id="cephalopod">
+                <br>
+                <b id="squid">C:=</b><br>
+                (animated cephalopod)
+                <br>
+            </div>
             <h2 style="color: slateblue" id="dance">about:</h2>
-            <p class="smallMargins" id="intro">
-                > welcome to insect.christmas; home of webmaster astrid ztar
-                <br>
-                > coded by astrid in html, css & js for her desktop & not phones<br><br>
-                > all of astrid's external links can be found here: <b><a href="https://insect.christmas/external">[external links]</a></b><br>
-                > you can email her for business or collaboration: <b><a href= "mailto: aztrosist.business@gmail.com">[email]</a></b><br>
-                <br>
-                <a href="https://streamelements.com/aztrosist/tip"><button type="button" style="background-color: chartreuse; padding: 1px 1px; font-size: 16px; font-family:monospace ; border-radius: 4px; display: inline-block; border: 2px solid slateblue; text-decoration: none;">donate</button></a>&nbsp;<b class="p1"><a href="https://insect.christmas/donors">[past donors]</a></b>
-            </p>
+            <div id="inAbout">
+                <p class="smallMargins" id="intro">
+                    <div id="introText">
+                    > welcome to insect.christmas; home of webmaster astrid ztar
+                    <br>
+                    > coded by astrid in html, css & js for her desktop & not phones<br><br>
+                    </div>
+                    > all of astrid's external links can be found here: <b><a href="https://insect.christmas/external">[external links]</a></b><br>
+                    > you can email her for business or collaboration: <b><a href= "mailto: aztrosist.business@gmail.com">[email]</a></b><br>
+                    <br>
+                    <a href="https://streamelements.com/aztrosist/tip"><button type="button" style="background-color: chartreuse; padding: 1px 1px; font-size: 16px; font-family:monospace ; border-radius: 4px; display: inline-block; border: 2px solid slateblue; text-decoration: none;">donate</button></a>&nbsp;<b class="p1"><a href="https://insect.christmas/donors">[past donors]</a></b>
+                </p>
+            
             <br>
             <p class="smallMargins">
                 > buy official merch here: <b><a href="https://lilacboy.store/collections/all">[merch store]</a></b><br>
                 > buy signed original art here: <b><a href="https://insectchristmas.etsy.com">[etsy store]</a></b><br>
             </p>
+            </div>
             <p class="smallMargins" id="creditAndWebring">
                 
                 <h2 style="color: slateblue" id="dance">credit:</h2>
@@ -69,45 +76,23 @@
             <a href="https://xylofool.neocities.org/"><img src="images/webring/xylofool.png" display="block"></a>
             
             <br>
-            <img src="images/halloweenBar.gif" id="halloweenBar" style="margins: 0;">
+            <p><b>diagnostics:</b><br></p>
             <p id="detection" class="smallMargins2" style="margins:0;">detected: </p>
             <p id="detection2" class="smallMargins2" style="margins:0;">detected: </p>
-            <p id="ladybug" style="margins: 0;">ladybug:</p>
+            <p id="ladybug" style="margins: 0;"><b>ladybug:</b></p>
             <p id="littlefucker" style="margins: 0;"></p>
-            
+            <img src="images/halloweenBar.gif" id="halloweenBar" style="margins: 0;">
             
         </div>
         
-        <object data="nav.html" class="moveToLeft"></object>
+        <object data="nav.html" class="moveToLeft" id="nav"></object>
         
         <script src="index.js"></script>
+        <script src="ladybug.js"></script>
         <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
         <div id="google_translate_element"></div>
-        <script>
-            var detection = document.getElementById('detection');
-            if(navigator.userAgent.includes("Chrome")) {
-                detection.innerText = "we have detected that you are using an inferior web browser. disgusting.";
-            } else if(navigator.userAgent.includes("Firefox") || navigator.userAgent.includes("Mozilla")) {
-                detection.innerText = "thank you for using firefox!";
-            } else if(navigator.userAgent.includes("Vivaldi")) {
-                detection.innerText = "vivaldi? what the hell is a vivaldi?";
-            } else if(navigator.userAgent.includes("Safari")){
-                detection.innerText = "safari? you scumbag.";
-            } else if(navigator.userAgent.includes("AppleWebKit")) {
-                detection.innerText = "you're using an apple product? what's wrong with you?";
-            } else if(navigator.userAgent.includes("Edge") || navigator.userAgent.includes("Edg")) {
-                detection.innerText = "living on the edge, huh? use a better web browser..";
-            } else {    
-                detection.innerText = "error detecting web browser...";
-            }
-            var detection2 = document.getElementById('detection2');
-            if(navigator.userAgent.includes("Linux")) {
-                detection2.innerText = "thank you for using linux!";
-            } else {
-                detection2.innerText = "we have detected that you aren't using linux. revolting.";
-            }
-        </script>
-
+        <script src="detection.js"></script>
+        
         <script type="module">
           
             window.addEventListener("load", (event) => { new cursoreffects.rainbowCursor(); });
