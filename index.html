@@ -1,102 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    <video autoplay muted loop src="videos/stars.mp4" id="stars"></video>
-    <head>
-        <img src="images/ic/icbig.gif" title="izzy :>" style="margin-top:11px;" align="left" height="104" border="2" alt="izzy the bug: :>" id="izzy">
-        <title>insect.christmas &#666;&iuml;&#606;</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-        <script src="script.js"></script>
-    </head>
-    <body id="body" onload="onPageLoaded()" class="chart" style="margin-left: 240px">
-        
-        <div class="p1" id="topbar">
-            <h1><b id="rainbow">&nbsp;insect.christmas</b> <a href="https://www.youtube.com/watch?v=UcDlWn1jQPc">&#666;&iuml;&#606;</a></h1>
-            <b class="smallMargins">&nbsp;&nbsp;&nbsp;home - status:</b>
-            <p class="smallMargins2">&nbsp;&nbsp;&nbsp;join the new insect.christmas <a href="https://www.insect.christmas/forum">forum</a>!</p>
-            
-            <table >
-                <thead>
-                    <tr>
-                        <th>* <a href="https://insect.christmas">home</a></th>
-                        <th><a href="https://insect.christmas/art">art</a></th>
-                        <th><a href="https://insect.christmas/games">games</a></th>
-                        <th><a href="https://insect.christmas/music">music</a></th>
-                        <th><a href="https://insect.christmas/video">video</a></th>
-                        <th><a href="https://insect.christmas/writing">writing</a></th>
-                        <th style="width:100px;height:20px;"><audio controls loop autoplay id="audioA" style="height:50%;width:50%;">
+<head>
+    <title>insect.christmas &#666;&iuml;&#606;</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="author" content="astrid ztar">
+    <meta name="keywords" content="fuck you, google!">
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body id="body" onload="onPageLoaded()" class="chart" style="margin-left: 240px">
+    <img src="images/ic/icbig.gif" title="izzy :>" style="margin-top:11px;" align="left" height="104" border="2" alt="izzy the bug: :>" id="izzy" data-bs-toggle="tooltip">
+    <video autoplay muted loop src="videos/stars.mp4" id="stars" oncanplay="this.play()"></video>
+
+    <div class="p1" id="topbar">
+        <h1><b id="rainbow">&nbsp;insect.christmas</b> <a href="https://www.youtube.com/watch?v=UcDlWn1jQPc">&#666;&iuml;&#606;</a></h1>
+        <b class="smallMargins">&nbsp;&nbsp;&nbsp;home - status:</b>
+        <p class="smallMargins2">&nbsp;&nbsp;&nbsp;join the new insect.christmas <a href="https://www.insect.christmas/forum">forum</a>!</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>* <a href="https://insect.christmas">home</a></th>
+                    <th><a href="https://insect.christmas/art">art</a></th>
+                    <th><a href="https://insect.christmas/games">games</a></th>
+                    <th><a href="https://insect.christmas/music">music</a></th>
+                    <th><a href="https://insect.christmas/video">video</a></th>
+                    <th><a href="https://insect.christmas/writing">writing</a></th>
+                    <th style="width:100px;height:20px;"><audio controls loop autoplay id="audioA" style="height:50%;width:50%;">
                             <source src="ost/04ic.wav" type="audio/mpeg">
                             Your browser does not support the audio element.
                             </audio> </th>
-                    </tr>
-                    <tr>
-                        <th>now playing:</th>
-                        <th class="smallMargins" style="color:slateblue;font-size:8;" colspan="6">insect.christmas - under the mistletoe</th>
-                    </tr>
-                </thead>
-            </table>
-        </div>
-        <div class="p1" id="pageContent">
-            <div id="cephalopod">
-                <br>
-                <b id="squid">C:=</b><br>
-                (animated cephalopod)
-                <br>
-            </div>
-            <h2 style="color: slateblue" id="dance">about:</h2>
-            <div id="inAbout">
-                <p class="smallMargins" id="intro">
-                    <div id="introText">
+                </tr>
+                <tr>
+                    <th>now playing:</th>
+                    <th class="smallMargins" style="color:slateblue;font-size:8;" colspan="6">insect.christmas - under the mistletoe</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="p1" id="pageContent">
+        <h2 style="color: slateblue" id="dance">about:</h2>
+        <div id="inAbout">
+            <p class="smallMargins" id="intro">
+                <div id="introText" style="margins: 0;">
                     > welcome to insect.christmas; home of webmaster astrid ztar
-                    <br>
-                    > coded by astrid in html, css & js for her desktop & not phones<br><br>
-                    </div>
-                    > all of astrid's external links can be found here: <b><a href="https://insect.christmas/external">[external links]</a></b><br>
-                    > you can email her for business or collaboration: <b><a href= "mailto: aztrosist.business@gmail.com">[email]</a></b><br>
-                    <br>
-                    <a href="https://streamelements.com/aztrosist/tip"><button type="button" style="background-color: chartreuse; padding: 1px 1px; font-size: 16px; font-family:monospace ; border-radius: 4px; display: inline-block; border: 2px solid slateblue; text-decoration: none;">donate</button></a>&nbsp;<b class="p1"><a href="https://insect.christmas/donors">[past donors]</a></b>
+                    <br> > coded by astrid in html, css & js for her desktop & not phones<br><br>
+                </div>
+                > astrid's external links: &nbsp;&nbsp;&nbsp;<b><a href="https://insect.christmas/external">[links]</a></b><br> > business or collaboration: &nbsp;<b><a href= "mailto: aztrosist.business@gmail.com">[email]</a></b>
+                <br>
+                <p class="smallMargins">
+                    > buy official merch here: &nbsp;&nbsp;&nbsp;<b><a href="https://lilacboy.store/collections/all">[merch]</a></b><br> > buy signed original art: &nbsp;&nbsp;&nbsp;<b><a href="https://insectchristmas.etsy.com">[etsy]</a></b><br>
                 </p>
-            
-            <br>
-            <p class="smallMargins">
-                > buy official merch here: <b><a href="https://lilacboy.store/collections/all">[merch store]</a></b><br>
-                > buy signed original art here: <b><a href="https://insectchristmas.etsy.com">[etsy store]</a></b><br>
-            </p>
-            </div>
-            <p class="smallMargins" id="creditAndWebring">
-                
-                <h2 style="color: slateblue" id="dance">credit:</h2>
-                > homepage rainbow cursor: <b><a href="https://github.com/tholman/cursor-effects">[cursor-effects]</a></b><br>
-                > lots of code: <b><a href="https://www.w3schools.com/">[w3schools]</a></b><br>
-                > halloween bar/pumpkin gifs not made by me
-            <br>
+                <br>
+                <a href="https://streamelements.com/aztrosist/tip"><button type="button" style="background-color: chartreuse; padding: 1px 1px; font-size: 16px; font-family:monospace ; border-radius: 4px; display: inline-block; border: 2px solid slateblue; text-decoration: none;">donate</button></a>&nbsp;<b class="p1"><a href="https://insect.christmas/donors">[past donors]</a></b>
 
+        </div>
+        <p id="diagnostics" style="margins: 0; color: slateblue"><b>diagnostics:</b></p>
+        <p id="detection" class="smallMargins2" style="margins:0;">detected: </p>
+        <p id="detection2" class="smallMargins2" style="margins:0;">detected: </p>
+        <p id="ladybug" style="margins: 0; color: slateblue"><b>ladybug:</b></p>
+        <p id="littlefucker" style="margins: 0;"></p>
+        <div id="cephalopod" style="margins: 0;">
+            <b id="squid" style="margins: 0;">C:=</b><br>
+        </div>
+
+        <div class="smallMargins" id="creditAndWebring">
             <h2 style="color: slateblue" id="dance">webring:</h2>
             <a href="http://www.iikorni.space/"><img src="images/webring/iikorni.png" display="block" style="margins: 0;"></a>
             <a href="https://xylofool.neocities.org/"><img src="images/webring/xylofool.png" display="block"></a>
-            
             <br>
-            <p><b>diagnostics:</b><br></p>
-            <p id="detection" class="smallMargins2" style="margins:0;">detected: </p>
-            <p id="detection2" class="smallMargins2" style="margins:0;">detected: </p>
-            <p id="ladybug" style="margins: 0;"><b>ladybug:</b></p>
-            <p id="littlefucker" style="margins: 0;"></p>
             <img src="images/halloweenBar.gif" id="halloweenBar" style="margins: 0;">
             
         </div>
-        
-        <object data="nav.html" class="moveToLeft" id="nav"></object>
-        
-        <script src="index.js"></script>
-        <script src="ladybug.js"></script>
-        <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
-        <div id="google_translate_element"></div>
-        <script src="detection.js"></script>
-        
-        <script type="module">
-          
-            window.addEventListener("load", (event) => { new cursoreffects.rainbowCursor(); });
-        </script>
-    </body>
 
+    </div>
+
+    <object data="nav.html" class="moveToLeft" id="nav"></object>
+
+    <script src="index.js"></script>
+    <script src="ladybug.js"></script>
+    <script src="detection.js"></script>
+    <script src="izzy.js"></script>
+
+</body>
 </html>

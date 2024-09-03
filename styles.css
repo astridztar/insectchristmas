@@ -114,11 +114,16 @@ a {
 
 a:hover {
   background-color: black;
+  cursor: url('cursors/cursorHover.png'), auto;
 }
 
 img {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+button:hover {
+    cursor: url('cursors/cursorHover.png'), auto;
 }
 
 body {
@@ -164,16 +169,24 @@ video {
 
 audio {
     opacity: 50%;
+    cursor: url('cursors/cursorHover.png'), auto;
+}
+
+img:hover {
+    cursor: url('cursors/cursorSmiley.png'), auto;
+}
+
+audio:hover {
+    cursor: url('cursors/cursorHover.png'), auto;
 }
 
 html {
-    
+    cursor: url('cursors/cursor.png'), auto;
 }
 
 .collapsible {
   background-color: #121112;
   color: chartreuse;
-  cursor: pointer;
   padding: 1px;
   width: 50%;
   border: none;
