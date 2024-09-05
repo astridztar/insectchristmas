@@ -1,8 +1,5 @@
 // personal dictionary of websites i approve of with hand-written tags and descriptions
 const dict = 
-//////////////////////////////////////////////////////
-// astrid struff, high priority
-//////////////////////////////////////////////////////
 {url: "https://aoogle.org", tags: "tagExample", description: "description"}];
 
 // easy list of urls
