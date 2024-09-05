@@ -5,6 +5,7 @@
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <meta name="author" content="astrid ztar">
         <meta name="keywords" content="fuck you, google!">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <style>
             h1 {
@@ -22,7 +23,13 @@
                 text-decoration: none;
                 display: inline-block;
                 font-size: 24px;
+                padding: 0;
+                margin: 0;
                 font-family: Arial, Helvetica, sans-serif;
+            }
+            table {
+                padding: 0;
+                margin: 0;
             }
             img {
                 border: 5px solid blue;
@@ -36,6 +43,16 @@
                 border 44px solid blue;
                 padding: 10px;
                 text-align: center;
+            }
+            .footer{
+                display: table;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                position: fixed;
+                bottom:0;
+                padding:10px;
+                left=50%;
             }
         </style>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,11 +74,14 @@
         <input id="searchBar" style="width: 50%; margins: 0px;">
         <br>
         <br><br>
-        <button onclick="search()" id="search">Aoogle Search</button>
-        <button onclick="lucky()" id="lucky">I'm Feeling Fucky</button>
+        <button onclick="search()" id="search" style="margin-bottom;0;">Aoogle Search</button>
+        <button onclick="lucky()" id="lucky" style="margin-bottom;0;">I'm Feeling Fucky</button>
         <br>
-        <p id="testp" style="margins:0;"></p>
-        
+        <p id="testp" style="margin-top:0;"></p>
+        <p></p>
+        <div class="footer">
+            <p style="font-size:12px;" id="catalog"></p>
+        </div>
         <script src="aoogle.js"></script>
     </body>
 
