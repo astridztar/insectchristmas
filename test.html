@@ -6,14 +6,15 @@
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <script src="script.js"></script>
     </head>
-    <body onload="onPageLoaded()" class="chart" style="margin-left: 180px;">
+    <body id="body" onload="onPageLoaded()" class="chart" style="margin-left: 180px">
         <video autoplay muted loop src="videos/stars.mp4"></video>
-        <img src="images/ic/icbig.gif" title="izzy :*7" style="margin-top:11px;" align="left" height="104" border="2">
-        <div class="p1">
-            <h1>&nbsp;insect.christmas &#666;&iuml;&#606;</h1>
-            <b class="smallMargins">&nbsp;&nbsp;&nbsp;computers - status:</b>
-            <p class="smallMargins2">&nbsp;&nbsp;&nbsp;click, click!</p>
-            <table>
+        <img src="images/ic/icbig.gif" title="izzy X|" style="margin-top:11px;" align="left" height="104" border="2">
+        <div class="p1" id="topbar">
+            <h1><b id="rainbow">&nbsp;insect.christmas</b> &#666;&iuml;&#606;</h1>
+            <b class="smallMargins">&nbsp;&nbsp;&nbsp;test - status:</b>
+            <p class="smallMargins2">&nbsp;&nbsp;&nbsp;astrid ztar's rotation</p>
+            
+            <table >
                 <thead>
                     <tr>
                         <th><a href="https://insect.christmas">home</a></th>
@@ -21,37 +22,27 @@
                         <th><a href="https://insect.christmas/games">games</a></th>
                         <th><a href="https://insect.christmas/music">music</a></th>
                         <th><a href="https://insect.christmas/video">video</a></th>
-                        <th>* <a href="https://insect.christmas/computers">computers</a></th>
+                        <th><a href="https://insect.christmas/writing">writing</a></th>
+                        <th>* <a href="https://insect.christmas/test">test</a></th>
                         <th style="width:100px;height:20px;"><audio controls loop autoplay id="audioA" style="height:50%;width:50%;">
-                            <source src="ost/03ic.wav" type="audio/mpeg">
+                            <source src="ost/03ic(fast).wav" type="audio/mpeg">
                             Your browser does not support the audio element.
                             </audio> </th>
                     </tr>
                     <tr>
                         <th>now playing:</th>
-                        <th class="smallMargins" style="color:slateblue;font-size:8;" colspan="6">insect.christmas - my room</th>
+                        <th class="smallMargins" style="color:slateblue;font-size:8;" colspan="7">insect.christmas - 03ic(fast)</th>
                     </tr>
                 </thead>
             </table>
         </div>
-        <div class="p1"><br>
-            <img src="images/setup2024.jpg" width="870">
+        <div class="p1" id="pageContent">
             <br>
-            <b>main computer</b><br>
-            <img src="images/pc1.jpg" width="500">
-            <br><br>
-            <b>server computer</b><br>
-            <img src="images/pc2.jpg" width="500">
-            <br><br>
-            <b>comms computer</b><br>
-            <img src="images/pc3.jpg" width="500">
-            <br><br>
-            <b>music computer</b><br>
-            <img src="images/pc4.jpg" width="500">
-            <br><br>
-            
-            <a><img src="https://web.archive.org/web/20091027073140/http://geocities.com/scareyhalloween/HalloweenlightsBar.gif"></a>
+            ??????????
+            <br>
+            <img src="images/halloweenBar.gif" id="halloweenBar" style="margins: 0;">
         </div>
+        
         <object data="nav.html" class="moveToLeft"></object>
         <script>
             let aud = document.getElementById("audioA");
@@ -59,5 +50,10 @@
                 aud.autoplay = true;
                 aud.loop = true;
         </script>
+        <script type="module">
+          
+            window.addEventListener("load", (event) => { new cursoreffects.rainbowCursor(); });
+        </script>
     </body>
+
 </html>

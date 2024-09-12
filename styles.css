@@ -30,7 +30,7 @@
 }
 
 .makeSpace {
-    margin-left: 240px;
+    margin-left: 200px;
 }
 
 .smallMargins {
@@ -69,8 +69,7 @@
 
 .mainbarLeft {
     float: left;
-    height: 95%;
-    width: 260px;
+    width: 200px;
     z-index: 1;
     overflow: hidden;
     position: fixed;
@@ -78,13 +77,24 @@
     top: 0;
     background: transparent;
     margin-left: 15px;
-    margin-top: 25px;
+    /*margin-top: 25px; */
     text-align: center;
+    
+    height: 100vh; /* 100% of the viewport height */
+    font-size: 1vh;
+
+           display: flex;
+            justify-content: center;
+            align-items: center;
+}
+
+/* resizing text */
+.resizableText {
+    font-size: 5vh; /* Font size will be 5% of the viewport height */
 }
 
 .moveToLeft {
     float: left;
-    height: 100%;
     width: 265px;
     z-index: 1;
     overflow: hidden;
@@ -93,6 +103,12 @@
     top: 0;
     background: transparent;
     text-align: center;
+    
+    height: 100vh; /* 100% of the viewport height */
+    font-size: 1vh;
+    
+    display: flex;
+
 }
 
 .chart {
@@ -208,4 +224,35 @@ html {
   transition: max-height 0.2s ease-out;
   background-color: #121112;
   font-family: monospace;
+}
+
+.spacelamp {
+    background: linear-gradient(45deg, rgba(207,120,224,1) 25%, rgba(100,249,179,1));
+    background-size: 400% 400%;
+    animation: spacelampanimation 5s linear infinite;
+    min-width: 88px; 
+    max-width: 88px; 
+    min-height: 23px; 
+    max-height: 23px; 
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'Pixelify Sans', sans-serif;
+    position: absolute;
+    /*font-optical-sizing: auto;*/
+    font-style: normal;
+    /*display: flex;  Added to center span content */
+    align-items: center;  /*Center vertically */
+    /*justify-content: center;  Center horizontally */
+}
+    
+@keyframes spacelampanimation {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
 }

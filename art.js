@@ -21,9 +21,20 @@ images.forEach(image => {
         }
         
     })
-    //image.addEventListener('click', () => {
-    //    image.style.width = '1000px';
-    //})
+    
+    // let isEnlarged = false;
+    
+    image.addEventListener('click', () => {
+    //     if (isEnlarged) {
+    //         image.style.width = '500px';
+    //     } else {
+    //         image.style.width = '1500px';
+    //         isEnlarged = true;
+    //     }
+    //     //isEnlarged = !isEnlarged;
+    
+        window.open(image.src, '_blank');
+    })
     image.addEventListener('mouseout', () => {
         //image.style.width = '500px';
         image.style.transform = 'scale(1)';
