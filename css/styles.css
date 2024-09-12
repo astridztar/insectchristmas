@@ -1,1 +1,258 @@
+.p1 {
+    font-family: monospace;
+}
 
+.main {
+    font-family: monospace;
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  float: right;
+  margin: 100px 100px 0px 0px;
+}
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 180px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.makeSpace {
+    margin-left: 200px;
+}
+
+.smallMargins {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.smallMargins2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.sidebarRight {
+    float: right;
+    height: 100%;
+    width: 360px;
+    z-index: 1;
+    overflow: hidden;
+    
+    right: 0;
+    top: 0;
+}
+
+.linkbarRight {
+    float: right;
+    height: 65%;
+    width: 250px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: transparent;
+    margin-right: 100px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.mainbarLeft {
+    float: left;
+    width: 200px;
+    z-index: 1;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: transparent;
+    margin-left: 15px;
+    /*margin-top: 25px; */
+    text-align: center;
+    
+    height: 100vh; /* 100% of the viewport height */
+    font-size: 1vh;
+
+           display: flex;
+            justify-content: center;
+            align-items: center;
+}
+
+/* resizing text */
+.resizableText {
+    font-size: 5vh; /* Font size will be 5% of the viewport height */
+}
+
+.moveToLeft {
+    float: left;
+    width: 265px;
+    z-index: 1;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: transparent;
+    text-align: center;
+    
+    height: 100vh; /* 100% of the viewport height */
+    font-size: 1vh;
+    
+    display: flex;
+
+}
+
+.chart {
+    color: chartreuse;
+}
+
+.purple {
+    color: slateblue;
+    font-family: monospace;
+}
+
+.littlefucker {
+
+}
+
+a {
+    color:coral;
+}
+
+a:hover {
+  background-color: black;
+  cursor: url('cursors/cursorHover.png'), auto;
+}
+
+img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+button:hover {
+    cursor: url('cursors/cursorHover.png'), auto;
+}
+
+body {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent;
+}
+
+h1 {
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    margin-bottom: 1px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid chartreuse;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  
+}
+
+th,
+td {
+  border: 1px solid chartreuse;
+  padding: 8px 10px;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+audio {
+    opacity: 50%;
+    cursor: url('cursors/cursorHover.png'), auto;
+}
+
+img:hover {
+    cursor: url('cursors/cursorSmiley.png'), auto;
+}
+
+audio:hover {
+    cursor: url('cursors/cursorHover.png'), auto;
+}
+
+html {
+    cursor: url('cursors/cursor.png'), auto;
+}
+
+.collapsible {
+  background-color: #121112;
+  color: chartreuse;
+  padding: 1px;
+  width: 50%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+.active, .collapsible:hover {
+  background-color: #121112;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 1px;
+  width: 50%;
+  transition: max-height 0.2s ease-out;
+  background-color: #121112;
+  font-family: monospace;
+}
+
+.spacelamp {
+    background: linear-gradient(45deg, rgba(207,120,224,1) 25%, rgba(100,249,179,1));
+    background-size: 400% 400%;
+    animation: spacelampanimation 5s linear infinite;
+    min-width: 88px; 
+    max-width: 88px; 
+    min-height: 23px; 
+    max-height: 23px; 
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'Pixelify Sans', sans-serif;
+    position: absolute;
+    /*font-optical-sizing: auto;*/
+    font-style: normal;
+    /*display: flex;  Added to center span content */
+    align-items: center;  /*Center vertically */
+    /*justify-content: center;  Center horizontally */
+}
+    
+@keyframes spacelampanimation {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
