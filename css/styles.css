@@ -212,6 +212,7 @@ td {
 }
 
 tr {
+    background: rgba(0,0,0,0.5);
     height: 100%;
     width: 100vw;
 }
@@ -282,9 +283,9 @@ html {
   background-color: #121112;
   color: chartreuse;
   padding: 1px;
-  width: 50%;
+  width: 100%;
   border: none;
-  text-align: left;
+  text-align: center;
   outline: none;
   font-size: 12px;
   font-family: monospace;
@@ -298,7 +299,7 @@ html {
   max-height: 0;
   overflow: hidden;
   padding: 1px;
-  width: 50%;
+  width: 100%;
   transition: max-height 0.2s ease-out;
   background-color: #121112;
   font-family: monospace;
