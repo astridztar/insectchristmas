@@ -2,7 +2,7 @@
 
 an official mirror of the public html, css & js files from https://insect.christmas
 
-![insect.christmas screenshot](https://insect.christmas/images/icScreen.png)
+![insect.christmas screenshot](https://insect.christmas/images/github/icScreenie.png)
 
 # cool features
 - randomized ladybug roll on index page (roll for random effects)
