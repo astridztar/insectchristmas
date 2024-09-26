@@ -41,8 +41,3 @@ images.forEach(image => {
         image.style = 'border: 2px solid chartreuse';
     })
 })
-
-let aud = document.getElementById("audioA");
-    aud.volume = 0.10; 
-    aud.autoplay = true;
-    aud.loop = true;

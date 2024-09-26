@@ -782,16 +782,4 @@ function getRandomColor() {
 function invertHex(hex) {
     return (Number(`0x1${hex}`) ^ 0xFFFFFF).toString(16).substr(1).toUpperCase()
 }
-
-/////////////////////////////////////
-// audio dampening
-/////////////////////////////////////
-
-// make sure audio does not ear-destroy
-if (ladybug != 197699) {
-    let aud = document.getElementById("audioA");
-    aud.volume = 0.02;
-    aud.autoplay = true;
-    aud.loop = true;
-}
 /////////////////////////////////////

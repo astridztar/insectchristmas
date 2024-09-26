@@ -1,9 +1,9 @@
 //////////////////////////////////////
 // animated smiley
 var smileyClosed = "=^)";
-var smileyOpen = "=^O";
-var smileyOpenNote = "=^O~d";
-var smileyClosedNote = "=^) d"
+var smileyOpen = "=v)";
+var smileyOpenNote = "=^D";
+var smileyClosedNote = "=vD"
 //////////////////////////////////////
             
 // slow alarm
