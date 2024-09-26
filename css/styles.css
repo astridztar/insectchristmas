@@ -4,7 +4,7 @@
 
 .main {
     font-family: monospace;
-    margin-left: 160px; /* Same as the width of the sidebar */
+    margin-left: 160px;
     padding: 0px 10px;
 }
 
@@ -18,13 +18,13 @@
 }
 
 .sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 180px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  height: 100%; 
+  width: 180px; 
+  position: fixed; /* fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* stay on top */
+  top: 0; /* stay at the top */
   left: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-x: hidden; /* disable horizontal scroll */
   padding-top: 20px;
   padding-left: 20px;
 }
@@ -68,29 +68,26 @@
 }
 
 .mainbarLeft {
-    float: left;
-    width: 200px;
     z-index: 1;
-    overflow: hidden;
-    position: fixed;
+    overflow: auto;
     left: 0;
     top: 0;
     background: transparent;
-    margin-left: 15px;
-    /*margin-top: 25px; */
     text-align: center;
-    
-    height: 100vh; /* 100% of the viewport height */
+    width: 100%;
     font-size: 1vh;
-
-           display: flex;
-            justify-content: center;
-            align-items: center;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    display: block;
+    flex: 1;
+    
 }
 
 /* resizing text */
 .resizableText {
-    font-size: 5vh; /* Font size will be 5% of the viewport height */
+    font-size: 5vh; /* font size - 5% of the viewport height */
 }
 
 .moveToLeft {
@@ -109,6 +106,33 @@
     
     display: flex;
 
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.navCSS {
+    z-index: 1;
+    background: transparent;
+    text-align: center;
+    
+    font-size: 1vh;
+    display: block;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    
+    overflow: auto;
 }
 
 .chart {
@@ -143,16 +167,25 @@ button:hover {
 }
 
 body {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 0;
     background-color: transparent;
+}
+
+html, body {
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 h1 {
     margin-top: 2px;
     margin-bottom: 0px;
+    
 }
 
 h2 {
@@ -161,17 +194,62 @@ h2 {
 
 table {
   border-collapse: collapse;
-  border: 2px solid chartreuse;
-  font-family: sans-serif;
+  font-family: monospace;
   font-size: 0.8rem;
   letter-spacing: 1px;
-  
+  table-layout: fixed;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 th,
 td {
   border: 1px solid chartreuse;
   padding: 8px 10px;
+
+  height: 100%;
+  text-align: center;
+}
+
+tr {
+    height: 100%;
+    width: 100vw;
+}
+
+th:empty, td:empty {
+    display: none;
+}
+
+.scrollable-content {
+    font-family: monospace;
+    max-height: 450px;        
+    height: 650px;
+    max-width: 750px;
+    width: 750px;
+    overflow-y: auto;         
+    padding: 5px; 
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box; 
+    
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 100%;
+}
+
+object {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex: 1;
 }
 
 video {
@@ -243,9 +321,9 @@ html {
     position: absolute;
     /*font-optical-sizing: auto;*/
     font-style: normal;
-    /*display: flex;  Added to center span content */
-    align-items: center;  /*Center vertically */
-    /*justify-content: center;  Center horizontally */
+    /*display: flex;  added to center span content */
+    align-items: center;  /*center vertically */
+    /*justify-content: center;  center horizontally */
 }
     
 @keyframes spacelampanimation {
