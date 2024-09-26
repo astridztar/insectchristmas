@@ -1,102 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>insect.christmas &#666;&iuml;&#606;</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-        <script src="script.js"></script>
-    </head>
-    <body onload="onPageLoaded()" class="chart" style="margin-left: 180px;">
-        <video autoplay muted loop src="videos/stars.mp4"></video>
-        <img src="images/ic/icbig.gif" title="izzy :)" style="margin-top:11px;" align="left" height="104" border="2">
-        <div class="p1">
-            <h1>&nbsp;insect.christmas &#666;&iuml;&#606;</h1>
-            <b class="smallMargins">&nbsp;&nbsp;&nbsp;donors - status:</b>
-            <p class="smallMargins2">&nbsp;&nbsp;&nbsp;yumy money crunch cronch !</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th><a href="https://insect.christmas">home</a></th>
-                        <th><a href="https://insect.christmas/art">art</a></th>
-                        <th><a href="https://insect.christmas/games">games</a></th>
-                        <th><a href="https://insect.christmas/music">music</a></th>
-                        <th><a href="https://insect.christmas/video">video</a></th>
-                        <th>* <a href="https://insect.christmas/donors">donors</a></th>
-                        <th style="width:100px;height:20px;"><audio controls loop autoplay id="audioA" style="height:50%;width:50%;">
-                            <source src="ost/freakerblast.wav" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                            </audio> </th>
-                    </tr>
-                    <tr>
-                        <th>now playing:</th>
-                        <th class="smallMargins" style="color:slateblue;font-size:8;" colspan="6">lilac boy - freaker blast</th>
-                    </tr>
-                </thead>
-            </table>
-        </div>
-        <div class="p1">
-            <br>
-            <a href="https://streamelements.com/aztrosist/tip"><button type="button" style="background-color: chartreuse; padding: 1px 1px; font-size: 32px; font-family:monospace ; border-radius: 4px; display: inline-block; border: 2px solid slateblue; text-decoration: none;">donate</button></a>
-            <br>
-            <h2 class="purple">past donors:</h2><br>
-            <table>
-            <tr>
-                <th colspan="2" style="color:yellow">september 2024:</th>
-            </tr>
-                <tr>
-                    <th style="color:slateblue">donor</th>
-                    <th style="color:slateblue">amount</th>
-                </tr>
-                <tr>
-                    <th>chert/austinpowerbottom</th>
-                    <th>$2.50</th>
-                </tr>
-            <tr>
-                <th colspan="2" style="color:yellow">august 2024:</th>
-            </tr>
-                <tr>
-                    <th style="color:slateblue">donor</th>
-                    <th style="color:slateblue">amount</th>
-                </tr>
-                <tr>
-                    <th>zellux_x</th>
-                    <th>$2.50</th>
-                </tr>
-                <tr>
-                    <th>platypusteeth</th>
-                    <th>$50</th>
-                </tr>
-                <tr>
-                    <th>opal_sand</th>
-                    <th>$15</th>
-                </tr>
-            <tr>
-                <th colspan="2" style="color:yellow">july 2024:</th>
-            </tr>
-                <tr>
-                    <th style="color:slateblue">donor</th>
-                    <th style="color:slateblue">amount</th>
-                </tr>
-                <tr>
-                    <th>jacque</th>
-                    <th>$5</th>
-                </tr>
-                <tr>
-                    <th>platypusteeth</th>
-                    <th>$10</th>
-                </tr>
-            </table>
-            <br>
-            <br>
-            <a><img src="https://web.archive.org/web/20091027073140/http://geocities.com/scareyhalloween/HalloweenlightsBar.gif"></a>
-
-        </div>
-        <object data="nav.html" class="moveToLeft"></object>
-        <script>
-            let aud = document.getElementById("audioA");
-                aud.volume = 0.04; 
-                aud.autoplay = true;
-                aud.loop = true;
-        </script>
-    </body>
+<head>
+    <title>insect.christmas &#666;&iuml;&#606;</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://github.com/astridztar" rel="me">
+    <link href="https://stream.insect.christmas/" rel="me">
+    <meta name="author" content="astrid ztar">
+    <meta name="keywords" content="fuck you, google!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body id="body" onload="onPageLoaded()" class="chart">
+    <table class="centered-container">
+        <tr>
+            <th>
+                <video autoplay muted loop src="videos/stars.mp4" id="stars" oncanplay="this.play()"></video>
+            
+                <div class="p1" id="topbar">
+                    <h1 style="margin-top: 0; font-size: 42px;"><b id="rainbow">insect.christmas</b> &#666;<b style="color:slateblue;">&iuml;</b>&#606;</h1>
+                    <p style="" class="smallMargins"><b style="color:slateblue;">donors - status:</b></p>
+                    <p style="" class="smallMargins2">thank you!!</p>
+                    <table>
+                            <tr>
+                                <th id="smiley">=^)</th>
+                                <th style="width:100%;height:20px;"><audio controls loop id="audioA" style="height:100%;width:100%;">
+                                        <source src="ost/freakerblast.wav" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                        </audio> </th>
+                            </tr>
+                            <tr>
+                                <th style="height:10px;">song:</th>
+                                <th class="smallMargins" style="color:slateblue;font-size:8;" colspan="2">lilac boy - freaker blast</th>
+                            </tr>
+                        
+                    </table>
+                </div>
+            </th>
+            <th>
+                <a href="https://insect.christmas"><img src="images/ic/icbig.gif" title="izzy :>" style="" height="150px" alt="izzy the bug: :)" id="izzy" data-bs-toggle="tooltip"></a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <div class="scrollable-content" id="pageContent">
+                    <br>
+                    <a href="https://streamelements.com/aztrosist/tip"><button type="button" style="background-color: chartreuse; padding: 1px 1px; font-size: 32px; font-family:monospace ; border-radius: 4px; display: inline-block; border: 2px solid slateblue; text-decoration: none;">donate</button></a>
+                    <br>
+                    <h2 class="purple">past donors:</h2><br>
+                    <table style="justify-content: center;align-items:center;margin:0;width:100%;">
+                        <tr>
+                            <th colspan="2" style="color:yellow">september 2024:</th>
+                        </tr>
+                            <tr>
+                                <th style="color:slateblue">donor</th>
+                                <th style="color:slateblue">amount</th>
+                            </tr>
+                            <tr>
+                                <th>anonymous</th>
+                                <th>$5.00</th>
+                            </tr>
+                            <tr>
+                                <th>chert/austinpowerbottom</th>
+                                <th>$2.50</th>
+                            </tr>
+                        <tr>
+                            <th colspan="2" style="color:yellow">august 2024:</th>
+                        </tr>
+                            <tr>
+                                <th style="color:slateblue">donor</th>
+                                <th style="color:slateblue">amount</th>
+                            </tr>
+                            <tr>
+                                <th>zellux_x</th>
+                                <th>$2.50</th>
+                            </tr>
+                            <tr>
+                                <th>platypusteeth</th>
+                                <th>$50</th>
+                            </tr>
+                            <tr>
+                                <th>opal_sand</th>
+                                <th>$15</th>
+                            </tr>
+                        <tr>
+                            <th colspan="2" style="color:yellow">july 2024:</th>
+                        </tr>
+                            <tr>
+                                <th style="color:slateblue">donor</th>
+                                <th style="color:slateblue">amount</th>
+                            </tr>
+                            <tr>
+                                <th>jacque</th>
+                                <th>$5</th>
+                            </tr>
+                            <tr>
+                                <th>platypusteeth</th>
+                                <th>$10</th>
+                            </tr>
+                    </table>
+                    <br>
+                    <br>
+                    <a><img src="https://web.archive.org/web/20091027073140/http://geocities.com/scareyhalloween/HalloweenlightsBar.gif"></a>
+                </div>
+            </th>
+            <th style="width: 150px; height:100%">
+                <div id="navigation"></div>
+            </th>
+        </tr>
+    </table>
+    <script src="/js/dampenAudio.js"></script>
+    <script src="/js/rainbow.js"></script>
+    <script src="/js/smiley.js"></script>
+    <script src="/js/nav.js"></script>
+</body>
 </html>
