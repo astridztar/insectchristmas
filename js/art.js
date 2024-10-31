@@ -1,4 +1,4 @@
-const images = document.querySelectorAll('.zoom');
+const images = document.querySelectorAll('.art-image');
 images.forEach(image => {
     image.addEventListener('mouseover', () => {
         var rotation = Math.floor(Math.random() * 4)
