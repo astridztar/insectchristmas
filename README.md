@@ -12,6 +12,7 @@ an official mirror of the public html, css & js files from https://insect.christ
 - custom javascript mini ascii animations on each page
 - random pictures of my cats in sidebar on each page
 - an original soundtrack by astrid ztar
+- custom css style to fit my aesthetic
 - personal search engine "aoogle"
 
 # collaboration
