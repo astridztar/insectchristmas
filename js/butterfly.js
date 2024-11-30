@@ -26,14 +26,12 @@ document.addEventListener('contextmenu', (event) => {
 });
 /////////////////////////////////////////////////////////////////
 
-// random color function, returns a random hex (re-used code)
+// random color function, returns highly saturated color
 function getRandomColor() {
-  var letters = '0123456789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
+    const hue = Math.floor(Math.random() * 360);
+    const saturation = 100;
+    const lightness = 50;
+    return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
 }
 
 /////////////////////////////////////////////////////////////////
