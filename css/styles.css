@@ -1,3 +1,24 @@
+.butterfly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+  font-family: monospace;
+  pointer-events: none;
+  color: #7FFF00;
+  transition: color 0.5s ease;
+}
+.butterfly:nth-child(1) { opacity: 0.9; }
+.butterfly:nth-child(2) { opacity: 0.8; }
+.butterfly:nth-child(3) { opacity: 0.7; }
+.butterfly:nth-child(4) { opacity: 0.6; }
+.butterfly:nth-child(5) { opacity: 0.5; }
+.butterfly:nth-child(6) { opacity: 0.4; }
+.butterfly:nth-child(7) { opacity: 0.3; }
+.butterfly:nth-child(8) { opacity: 0.2; }
+.butterfly:nth-child(9) { opacity: 0.1; }
+
+
 .p1 {
     font-family: monospace;
 }
