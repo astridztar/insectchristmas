@@ -6,7 +6,7 @@
 var ladybug = Math.floor(Math.random() * 256000);
 
 // test hard-coded
-//var ladybug = 44444;
+//var ladybug = 12344;
 
 // set littlefucker to display ladybug pull
 document.getElementById("littlefucker").innerHTML = ladybug.toString();
@@ -36,7 +36,8 @@ function generateRandomString() {
     let result = '';
 
     for (let i = 0; i < 7; i++) {
-        // Generate a random index to pick a character from the characters string
+        // generate a random index to
+        // pick a character from the characters string
         const randomIndex = Math.floor(Math.random() * characters.length);
         result += characters[randomIndex];
     }
@@ -84,6 +85,86 @@ switch (ladybug) {
     case 11117:
     case 11118:
     case 11119:
+    case 11120:
+    case 11121:
+    case 11122:
+    case 11123:
+    case 11124:
+    case 11125:
+    case 11126:
+    case 11127:
+    case 11128:
+    case 11129:
+    case 11130:
+    case 11131:
+    case 11132:
+    case 11133:
+    case 11134:
+    case 11135:
+    case 11136:
+    case 11137:
+    case 11138:
+    case 11139:
+    case 11140:
+    case 11141:
+    case 11142:
+    case 11143:
+    case 11144:
+    case 11145:
+    case 11146:
+    case 11147:
+    case 11148:
+    case 11149:
+    case 11150:
+    case 11151:
+    case 11152:
+    case 11153:
+    case 11154:
+    case 11155:
+    case 11156:
+    case 11157:
+    case 11158:
+    case 11159:
+    case 11160:
+    case 11161:
+    case 11162:
+    case 11163:
+    case 11164:
+    case 11165:
+    case 11166:
+    case 11167:
+    case 11168:
+    case 11169:
+    case 11170:
+    case 11171:
+    case 11172:
+    case 11173:
+    case 11174:
+    case 11175:
+    case 11176:
+    case 11177:
+    case 11178:
+    case 11179:
+    case 11180:
+    case 11181:
+    case 11182:
+    case 11183:
+    case 11184:
+    case 11185:
+    case 11186:
+    case 11187:
+    case 11188:
+    case 11189:
+    case 11190:
+    case 11191:
+    case 11192:
+    case 11193:
+    case 11194:
+    case 11195:
+    case 11196:
+    case 11197:
+    case 11198:
+    case 11199:
         shakeElements();
         break;
     case 12340:
@@ -181,8 +262,8 @@ switch (ladybug) {
         break;
     default:
         var element = document.getElementById('littlefucker');
-        element.innerHTML = ladybug + "<br><br><b style='color:yellow;'>no luck! refresh to try again!<br>1 in ~3282 refreshes strike gold!</b>";
-        // 78 / 256,000 implemented
+        element.innerHTML = ladybug + "<br><br><b style='color:yellow;'>no luck! refresh to try again!<br>1 in ~1620 refreshes strike gold!</b>";
+        // 158 / 256,000 implemented
         // 256,000 divided by number on left to get probability
         break;
 }
@@ -195,7 +276,6 @@ function insaneLaughter() {
         'LOL', 'XD', 'ROFL', "LMFAO", "OMG"
     ];
 
-    // Function to create a single laugh element
     function createlaugh() {
         const laugh = document.createElement('div');
         laugh.innerText = laughImages[Math.floor(Math.random() * laughImages.length)];
@@ -304,7 +384,6 @@ function randomizeCharacterSizes(node) {
             let randomFontSize = Math.floor(Math.random() * 101) + 10; // 10px to 100px
             span.style.fontSize = randomFontSize + 'px';
 
-            // Append the span to the container
             container.appendChild(span);
         }
 
@@ -351,11 +430,11 @@ function shakeElements() {
     function shake(element) {
         let startX = 0;
         let startY = 0;
-        const intensity = 5; // Intensity of the shake (in pixels)
+        const intensity = 5; // intensity of the shake (in pixels)
 
         function applyShake() {
-            const randomX = Math.random() * intensity * 5 - intensity; // Random X displacement
-            const randomY = Math.random() * intensity * 5 - intensity; // Random Y displacement
+            const randomX = Math.random() * intensity * 5 - intensity;
+            const randomY = Math.random() * intensity * 5 - intensity;
             element.style.transform = `translate(${randomX}px, ${randomY}px)`;
             requestAnimationFrame(applyShake);
         }
@@ -418,10 +497,10 @@ function createMatrixFall() {
             currentPosition += fallSpeed;
             snowflake.style.top = `${currentPosition}vh`;
 
-            // Make the snowflake sway left and right
+            // make  snowflake sway left right
             snowflake.style.left = `${leftPosition + Math.sin(currentPosition / 10) * 2}vw`;
 
-            // Remove the snowflake once it goes off the screen
+            // remove snowflake once it goes off screen
             if (currentPosition > 100) {
                 snowflake.remove();
             } else {
@@ -673,7 +752,7 @@ function createBouncingDVD() {
     const numCats = 1;
     const catImages = [];
 
-    // Function to create a bouncing cat image
+    // function to create a bouncing cat image
     function createCatImage() {
         const cat = document.createElement('img');
         cat.src = 'https://insect.christmas/images/ladybugs/dvd.png';
@@ -687,15 +766,15 @@ function createBouncingDVD() {
 
         document.body.appendChild(cat);
 
-        let dx = (Math.random() * 10) - 2; // Horizontal velocity
-        let dy = (Math.random() * 10) - 2; // Vertical velocity
+        let dx = (Math.random() * 10) - 2; // h velocity
+        let dy = (Math.random() * 10) - 2; // v velocity
 
         function bounce() {
             let rect = cat.getBoundingClientRect();
             let x = rect.left + dx;
             let y = rect.top + dy;
 
-            // Reverse direction if hitting edges
+            // reverse direction if hitting edges
             if (x <= 0 || x + rect.width >= window.innerWidth) {
                 dx *= -1;
             }
