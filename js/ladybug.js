@@ -6,7 +6,7 @@
 var ladybug = Math.floor(Math.random() * 256000);
 
 // test hard-coded
-//var ladybug = 12344;
+//var ladybug = 80085;
 
 // set littlefucker to display ladybug pull
 document.getElementById("littlefucker").innerHTML = ladybug.toString();
@@ -717,7 +717,7 @@ function randomizeStyles() {
 // maoposting
 function function197699() {
     var element = document.getElementById('intro');
-    element.innerHTML = '<img src="images/mao.jpg">';
+    element.innerHTML = '<img src="images/mao.jpg" width="500">';
     var videoElement = document.getElementById('stars');
     videoElement.setAttribute('src', 'videos/mao.mp4')
     videoElement.muted = !videoElement.muted;
