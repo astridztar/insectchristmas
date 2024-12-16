@@ -6,7 +6,7 @@
 var ladybug = Math.floor(Math.random() * 256000);
 
 // test hard-coded
-//var ladybug = 80085;
+//var ladybug = 1074;
 
 // set littlefucker to display ladybug pull
 document.getElementById("littlefucker").innerHTML = ladybug.toString();
@@ -54,6 +54,9 @@ switch (ladybug) {
     case 117:
         function117();
         break;
+    case 333:
+        function333();
+        break;
     case 420:
         function420();
         break;
@@ -71,6 +74,12 @@ switch (ladybug) {
         break;
     case 1001:
         function1001();
+        break;
+    case 1074:
+        refreshPage();
+        break;
+    case 1984:
+        function1984();
         break;
     case 6666:
         function666();
@@ -179,6 +188,18 @@ switch (ladybug) {
     case 12349:
         createMatrixFall();
         break;
+    case 33033:
+    case 33133:
+    case 33233:
+    case 33333:
+    case 33433:
+    case 33533:
+    case 33633:
+    case 33733:
+    case 33833:
+    case 33933:
+        flipPage();
+        break;
     case 44444:
         // SCREAMER !!! AAAAAAA!!!!!!! [WHOA!!!]
         function44444();
@@ -254,6 +275,18 @@ switch (ladybug) {
         // function 197699 september 9th 1976
         function197699();
         break;
+    case 211220:
+    case 211221:
+    case 211222:
+    case 211223:
+    case 211224:
+    case 211225:
+    case 211226:
+    case 211227:
+    case 211228:
+    case 211229:
+        imgsUpsideDown();
+        break;
     case 255999:
         function360000();
         break;
@@ -262,11 +295,15 @@ switch (ladybug) {
         break;
     default:
         var element = document.getElementById('littlefucker');
-        element.innerHTML = ladybug + "<br><br><b style='color:yellow;'>no luck! refresh to try again!<br>1 in ~1620 refreshes strike gold!</b>";
-        // 158 / 256,000 implemented
+        element.innerHTML = ladybug + "<br><br><b style='color:yellow;'>no luck! refresh to try again!<br>1 in ~1414 refreshes strike gold!</b>";
+        // 181 / 256,000 implemented
         // 256,000 divided by number on left to get probability
         break;
 }
+
+// *************************************************************************
+// ALL OF THE FUCKING FUNCTIONS!!!!!
+// *************************************************************************
 
 // display laughs like crazy
 function insaneLaughter() {
@@ -310,11 +347,41 @@ function insaneLaughter() {
     document.head.appendChild(style);
 }
 
+// flip images on the page upside down
+function imgsUpsideDown() {
+  const images = document.querySelectorAll('img');
+  images.forEach(image => {
+    image.style.transform = 'rotate(180deg)';
+  });
+}
+
+// flip page around
+function flipPage() {
+  document.body.style.transform = 'scaleX(-1)';
+}
+
+// literally just refresh page (1074 windows event id)
+function refreshPage() {
+  window.location.reload();
+}
+
 // 117 ladybug pull
 // 117 haha funny (replace intro html with 117)
 function function117() {
     var element = document.getElementById('intro');
     element.innerHTML = '<br>117';
+}
+
+// 333 ladybug pull
+// make it ask for the 3 digits on the back of your credit card
+function function333() {
+    var videoElement = document.getElementById('stars');
+    videoElement.setAttribute('src', 'videos/creditcard.mp4')
+    videoElement.muted = !videoElement.muted;
+    videoElement.volume = 0.07;
+    var audioElement = document.getElementById('audioA');
+    audioElement.volume = 0;
+    
 }
 
 // 420 ladybug pull
@@ -323,7 +390,7 @@ function function420() {
     var elements = document.getElementsByTagName('*');
     for (var i = elements.length - 1; i >= 0; i--) {
         elements[i].style.color = 'green';
-    }
+    }m
 }
 
 // 512 ladybug pull
@@ -415,6 +482,28 @@ function function1001() {
             elements[i].style.color = 'rgb(128,0,255)';
         }
     }
+}
+///// ******************
+
+///// ****************** TODO      
+// 1984 ladybug pull
+// inverts colors
+function function1984() {
+    var videoElement = document.getElementById('stars');
+    videoElement.setAttribute('src', 'videos/1984.mp4')
+    videoElement.muted = !videoElement.muted;
+    videoElement.volume = 0.50;
+    
+    const allElements = document.querySelectorAll('*');
+    allElements.forEach(element => {
+    if (window.getComputedStyle(element).color && element.textContent.trim() !== '') {
+      if (element.id === 'littlefucker') {
+        element.style.color = 'red';
+      } else {
+        element.style.color = 'black';
+      }
+    }
+    });
 }
 ///// ******************
 
@@ -520,8 +609,6 @@ function createMatrixFall() {
 // 44444 ladybug pull
 // replace stars with funny 44444.mp4
 function function44444() {
-    //var element = document.getElementById('intro');
-    //element.innerHTML = '<img src="images/mao.jpg">';
     var videoElement = document.getElementById('stars');
     videoElement.setAttribute('src', 'videos/44444.mp4')
     videoElement.muted = !videoElement.muted;
