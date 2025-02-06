@@ -2,7 +2,7 @@
 an official mirror of the public html, css & js files from https://insect.christmas
 
 insect.christmas is a personal & professional collection of astrid ztar's various works, thoughts & passions
-![insect.christmas screenshot](https://insect.christmas/images/github/ic11-26-2024.png)
+![insect.christmas screenshot](https://insect.christmas/images/history/2025-02-05.png)
 
 # cool features
 - a website mascot: "izzy the bug", which acts as a home button or a game on home page
@@ -16,6 +16,7 @@ insect.christmas is a personal & professional collection of astrid ztar's variou
 - an original soundtrack by astrid ztar
 - custom css style to fit my aesthetic
 - personal search engine "aoogle"
+- a set of cool blinkies
 - custom cursor sprites
 
 # collaboration
