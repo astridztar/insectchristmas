@@ -280,11 +280,12 @@ th:empty, td:empty {
 
 .comic-image {
         width: 50%;
+        height: 50%;
         
 }
 
 .art-image {
-        width: 30%;
+        width: 40%;
         
 }
 
@@ -348,9 +349,7 @@ th:empty, td:empty {
         height: 50%;
     }
     
-    .comic-image, .art-image {
-        width: 100%;
-    }
+    
     
     .scrollable-content2 {
        max-width: 100vw;     
