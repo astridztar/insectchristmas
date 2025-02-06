@@ -12,17 +12,18 @@ function replaceNavigationContent() {
                 
                 <a href="https://insect.christmas/art" target="_parent"><img src="https://insect.christmas/buttons/button_art.png"></a> 
                 <a href="https://insect.christmas/comics" target="_parent"><img src="https://insect.christmas/buttons/button_comics.png"></a>
-                <br>
+                <a href="https://insect.christmas/cosplay" target="_parent"><img src="https://insect.christmas/buttons/button_cosplay.png"></a>
                 
+                <br>
                 
                 <a href="https://insect.christmas/games" target="_parent"><img src="https://insect.christmas/buttons/button_games.png"></a>
                 <a href="https://insect.christmas/music" target="_parent"><img src="https://insect.christmas/buttons/button_music.png"></a>
-                <br>
-                
                 <a href="https://insect.christmas/stream" target="_parent"><img src="https://insect.christmas/buttons/button_stream.png"></a>
-                <a href="https://insect.christmas/video" target="_parent"><img src="https://insect.christmas/buttons/button_video.png"></a>
                 <br>
-                <a href="https://insect.christmas/external" target="_parent"><img src="https://insect.christmas/buttons/button_links.png"></a>
+                <a href="https://insect.christmas/thoughts" target="_parent"><img src="https://insect.christmas/buttons/button_thoughts.png"></a>
+                
+                <a href="https://insect.christmas/video" target="_parent"><img src="https://insect.christmas/buttons/button_video.png"></a>
+                
                 <a href="https://insect.christmas/other" target="_parent"><img src="https://insect.christmas/buttons/button_other.png"></a>
                 
                 
@@ -31,14 +32,15 @@ function replaceNavigationContent() {
                 
                 
                 <a href="https://discord.gg/tV6uBJYqC8" target="_parent"><img src="https://insect.christmas/buttons/button_discord.png"></a>
-                <a href="https://insect.christmas/forum" target="_parent"><img src="https://insect.christmas/buttons/button_forum.png"></a>
-                
+                <a href="https://insect.christmas/external" target="_parent"><img src="https://insect.christmas/buttons/button_links.png"></a>
+                <a href="https://lilacboy.store" target="_parent"><img src="https://insect.christmas/buttons/button_merch.png"></a>
                 
                 <hr style="color:chartreuse;">
                 
-                
-                <a href="https://lilacboy.store" target="_parent"><img src="https://insect.christmas/buttons/button_merch.png"></a>
-                <a href="https://www.patreon.com/c/astridztar" target="_parent"><img src="https://insect.christmas/buttons/button_patreon.png"></a>
+                <img src="https://insect.christmas/blinkies/debian.gif">
+                <img src="https://insect.christmas/blinkies/lesbian.gif"><br>
+                <img src="https://insect.christmas/blinkies/marxism.gif">
+                <img src="https://insect.christmas/blinkies/neurodivergent.gif">
                 
                 <hr style="color:chartreuse;">
                 <br>
