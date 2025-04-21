@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>rp randomizer &#666;&iuml;&#606;</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://github.com/astridztar" rel="me">
+        <link href="https://stream.insect.christmas/" rel="me">
+        <meta name="author" content="astrid ztar">
+        <meta name="keywords" content="insect.christmas insect christmas astrid ztar lilac boy psycho star aztrosist tv kid rp randomizer roleplay">
+        <meta name="keywords" content="fuck you, google!">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta content="roleplay randomizer" property="og:title" />
+        <meta content="roleplay randomizer" property="og:description" />
+        <meta content="https://insect.christmas" property="og:url" />
+        <meta content="https://insect.christmas/images/ic/icbig.gif" property="og:image" />
+        <meta content="#93ff00" data-react-helmet="true" name="theme-color" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6004373384983075"
+         crossorigin="anonymous"></script>
+        <style>
+        body {
+            font-family: 'Arial', cursive;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #21130d;
+        }
+        button {
+            font-family: 'Arial', cursive;
+            cursor: pointer;
+            font-size: 32px;
+            background-color: #eab676;
+            color: black;
+        }
+        textarea {
+            font-family: 'Arial', cursive;
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 32px;
+            width: 800px;
+            height: 100px;
+            border: 5px solid #eab676;
+            border-radius: 5px;
+            resize: none;
+            margin-bottom: 60px;
+        }
+        h2 {
+            color: #eab676;
+            font-size: 84px;
+            -webkit-text-stroke: 2px black;
+            text-stroke: 2px black;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 60px;
+            color: #eab676;
+        }
+        a {
+            color: #873e23;
+        }
+        </style>
+    </head>
+    
+    <body>
+        <br><br>
+        <h2>roleplay randomizer</h2>
+        <p style="margin-bottom: 0px;">roleplay with your friends!<br>
+        generate a voice/character, & improvise in a setting!</p>
+        <p>created by astrid ztar<br><b><a href="https://insect.christmas">[ back to insect.christmas ]</a></b></p>
+        <button id="button1">generate a voice</button>
+        <textarea id="output1" readonly placeholder="???"></textarea>
+        <br><br>
+        
+        <button id="button2">generate a character</button>
+        <textarea id="output2" readonly placeholder="???"></textarea>
+        <br><br>
+        
+        <button id="button3">generate a setting</button>
+        <textarea id="output3" readonly placeholder="???"></textarea>
+        <script>
+            const voices = ["high-pitched nerdy", "low & breathy", "heavy smoker", "mob-boss accent", "depressed goblin", "deep pitched evil vampire", "western cowboy", "cocaine-addled fast-speaker","cookie monster","new york city accent", "grumbly & angry","slow-talking like a sloth", "marbles in your mouth", "british accent", "california surfer accent", "old-timey radio announcer","a deep mumbler"];
+            const characters = ["a middle-aged office worker at insurance corp", "a drug dealer from ohio", "a redditor who can't get laid", "a cia agent trying to get people to commit crimes", "a former high school 2nd string quarterback who won't shut up about it", "a republican with too many subscriptions to streaming services", "somebody in the room's ex-partner", "someone who won't shut up about conspiracy theories, a dude who really wants money from you"];
+            const settings = ["a packed cafe", "in a back alley of a busy city", "a corporate insurance office at 4:30PM", "inside of a cave surviving after a plane crash", "underground hiding from something", "a public park on a sunny day", "outside of a hotel lobby at night in a city", "at a diner in the morning","in a desert, surviving for your life"];
+        
+            const button1 = document.getElementById("button1");
+            const button2 = document.getElementById("button2");
+            const button3 = document.getElementById("button3");
+            const output1 = document.getElementById("output1");
+            const output2 = document.getElementById("output2");
+            const output3 = document.getElementById("output3");
+        
+            function getRandomString(list) {
+              const randomIndex = Math.floor(Math.random() * list.length);
+              return list[randomIndex];
+            }
+            
+            button1.addEventListener("click", () => {
+              output1.value = getRandomString(voices);
+            });
+        
+            button2.addEventListener("click", () => {
+              output2.value = getRandomString(characters);
+            });
+        
+            button3.addEventListener("click", () => {
+              output3.value = getRandomString(settings);
+            });
+        </script>   
+    </body>
+</html>
