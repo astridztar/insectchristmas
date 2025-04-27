@@ -10,7 +10,7 @@ const izzyEmotions = [
 ];
 
 const izzyClickRules = [
-    { type: "range", min: 5000, max: Infinity, message: "okay. you revived her. happpy?" },
+    { type: "range", min: 5000, max: Infinity, message: "okay. you revived her. happy?" },
     { type: "range", min: 1000, max: 4999, message: "RECONSIDER EXISTING!!!!!!! F#CK!!!." },
     { type: "range", min: 500, max: 999, message: "get a life, scumbag." },
     { type: "range", min: 100, max: 499, message: "izzy has died. you moron. you f#cking killed her." },
