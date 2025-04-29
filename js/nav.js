@@ -1,7 +1,8 @@
-window.onload = function() {
+
+window.addEventListener("load", function() {
     replaceNavigationContent();
     randomKiwi();
-};
+});
 
 function replaceNavigationContent() {
     var navigationDiv = document.getElementById("navigation");
