@@ -399,7 +399,7 @@ document.getElementById('sendBtn').addEventListener('click', function() {
         chatbox.innerHTML += `<div><strong style="color:slateblue;">You:</strong> ${userInput}</div><br>`;
 
         const botResponse = getBotResponse(userInput);
-        chatbox.innerHTML += `<div><strong style="color:coral;">Bot:</strong> ${botResponse.text}</div><br>`;
+        chatbox.innerHTML += `<div><strong style="color:coral;">Izzy:</strong> ${botResponse.text}</div><br>`;
 
         displayEmotion(botResponse.emotion);
 
