@@ -19,6 +19,22 @@
 .butterfly:nth-child(9) { opacity: 0.1; }
 
 
+#toggleRain, #toggleButterflies {
+    background-color: black;
+    color: chartreuse;
+    border: 1px solid chartreuse;
+    font-family: monospace;
+    padding: 5px 10px;
+    cursor: url('cursors/cursorHover.png'), auto;
+    transition: all 0.3s ease;
+}
+#toggleRain:hover, #toggleButterflies:hover {
+    border-color: yellow;
+}
+#toggleRain:active, #toggleButterflies:active {
+    border-color: slateblue;
+}
+
 .p1 {
     font-family: monospace;
 }
@@ -41,11 +57,11 @@
 .sidenav {
   height: 100%; 
   width: 180px; 
-  position: fixed; /* fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* stay on top */
-  top: 0; /* stay at the top */
+  position: fixed;
+  z-index: 1;
+  top: 0;
   left: 0;
-  overflow-x: hidden; /* disable horizontal scroll */
+  overflow-x: hidden;
   padding-top: 20px;
   padding-left: 20px;
 }
@@ -95,7 +111,6 @@
     top: 0;
     background: transparent;
     text-align: center;
-    width: 100%;
     font-size: 1vh;
     height: 100%;
     justify-content: center;
@@ -108,7 +123,7 @@
 
 /* resizing text */
 .resizableText {
-    font-size: 5vh; /* font size - 5% of the viewport height */
+    font-size: 5vh;
 }
 
 .moveToLeft {
@@ -122,7 +137,7 @@
     background: transparent;
     text-align: center;
     
-    height: 100vh; /* 100% of the viewport height */
+    height: 100vh;
     font-size: 1vh;
     
     display: flex;
@@ -221,6 +236,7 @@ table {
   table-layout: fixed;
   overflow-x: hidden;
   height: auto;
+  word-wrap: break-word;
 }
 
 th,
@@ -238,6 +254,8 @@ tr {
     background: rgba(0,0,0,0.6);
     height: auto;
     width: 100vw;
+    word-wrap: break-word;
+    
 }
 
 th:empty, td:empty {
@@ -291,27 +309,20 @@ th:empty, td:empty {
 
 /* small height specific ddjustments */
 @media, (max-height: 768px) {
-    tr,th {
-        max-width: 80vw;
-        max-height: 40vw;
-    }
-        img {
-        max-width: 40vw;
-        max-height: 40vw;
-    }
+
     .scrollable-content, .p1, .mainbarLeft {
         
         max-width: 80vw;     
         padding: 5px;          
-        font-size: 0.9rem;      
+        font-size: 0.5rem;      
         max-height: 45vh;      
         white-space: normal;
     }
     .scrollable-content2 {
-       max-width: 100vw;     
+           
                  
         font-size: 0.9rem;      
-        max-height: 100vh;  
+          
         height: 100%;
     }
     .kiwiPic {
@@ -322,47 +333,57 @@ th:empty, td:empty {
 
 
 /* mobile specific adjustments */
-@media, (max-width: 768px) {
-    .scrollable-content, .p1, .mainbarLeft {
+@media, (max-width: 1280px) {
+    .scrollable-content, .p1, .mainbarLeft, .rainbow, .topAss, .h1Rainbow, .smallMargins {
         
         max-width: 60vw;     
         padding: 5px;          
-        font-size: 0.9rem;      
-        max-height: 45vh;      
-        white-space: normal;
+        font-size: 0.5rem;      
+        max-height: 40vh;      
+        
     }
     tr,th {
         max-width: 50vw;
-        max-height: 40vw;
-        font-size: 0.9rem; 
+        font-size: 0.5rem; 
         word-wrap: break-word;
         white-space: normal;
     }
     
+    table {
+        width: 100%;
+    }
+    
     img {
-        max-width: 40vw;
-        max-height: 40vw;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .scrollable-content2 {
+        padding: 50px 0 50px 0;
+        max-height: 100vh; 
+        max-width: 100vw;
+        font-size: 0.5rem;
+    }
+    
+    iframe {
+        width: 100%;
+    }
+    
+    .comic-image {
+        width: 100%;
+        height: 100%; 
+    }
+    
+    .webringImage {
+        width: 40%;
+        height: 40%;
     }
     
     .kiwiPic {
         width: 50%;
         height: 50%;
     }
-    
-    
-    
-    .scrollable-content2 {
-       max-width: 100vw;     
-                 
-        font-size: 0.9rem;      
-        max-height: 100vh;  
-        height: 100%;
-    }
 }
-
-
-
-
 
 .flex-container {
     display: flex;
@@ -392,6 +413,7 @@ video {
 
 audio {
     opacity: 50%;
+    max-width: 600px;
     cursor: url('cursors/cursorHover.png'), auto;
 }
 
@@ -448,11 +470,8 @@ html {
     margin-right: 5px;
     font-family: 'Pixelify Sans', sans-serif;
     position: absolute;
-    /*font-optical-sizing: auto;*/
     font-style: normal;
-    /*display: flex;  added to center span content */
-    align-items: center;  /*center vertically */
-    /*justify-content: center;  center horizontally */
+    align-items: center; 
 }
     
 @keyframes spacelampanimation {
