@@ -27,6 +27,7 @@ const hardcodedResponses = {
     "when will i die": [{ text: "at some point! ^_^", emotion: "curious" }],
     "can i ask you a question": [{ text: "sure! ask away! ^_^", emotion: "curious" }],
     "its a crazy question": [{ text: "okay. show me how crazy ^_^", emotion: "confused" }],
+
     
     // INSULTING IZZY
     "fuck you": [{ text: "fuck you! d,d", emotion: "mad" }],
@@ -117,10 +118,18 @@ const hardcodedResponses = {
     "do you like yuri": [{ text: "yessss! ^o^", emotion: "flirty" }],
     "do you like toxic yaoi": [{ text: "yes, embarrasingly. >_>", emotion: "flirty" }],
     "do you like toxic yuri": [{ text: "yes..... embarrasingly. >_>", emotion: "flirty" }],
+    "do you like linux": [{ text: "yes! i run arch as my daily driver. :P", emotion: "flirty" }],
+    "do you like boobs": [{ text: "( . ,. .) .... yes. ^_^ ", emotion: "cute" }],
+    "do you like gock": [{ text: "( . ,. .) .... yes. ^_^ ", emotion: "cute" }],
+    "do you like cock": [{ text: "( . ,. .) .... yes. ^_^ ", emotion: "curious" }],
+    "do you like dick": [{ text: "( . ,. .) .... yes. ^_^ ", emotion: "curious" }],
+    "do you like balls": [{ text: "( . ,. .) .... yes. ^_^ ", emotion: "curious" }],
+    "do you like anime": [{ text: "( . ,. .) .... yes. ^_^ ", emotion: "cute" }],
     
     // DO YOU LIKE _____? -> (NO)
-    "do you like linux": [{ text: "yes! i run arch as my daily driver. :P", emotion: "flirty" }],
     "do you like windows": [{ text: "uuummm. ofc not <_<", emotion: "mad" }],
+    "do you like scientology": [{ text: "uuummm. ofc not <_<", emotion: "mad" }],
+    "do you like family guy": [{ text: "uuummm. ofc not <_<", emotion: "mad" }],
     "do you like microsoft": [{ text: "uuummm. ofc not <_<", emotion: "mad" }],
     "do you like bill gates": [{ text: "uuummm. ofc not <_<", emotion: "mad" }],
     "do you like capitalism": [{ text: "uuummm. ofc not <_<", emotion: "mad" }],
@@ -154,7 +163,7 @@ const hardcodedResponses = {
     "do you like spongebob": [{ text: "yeah, i like spongebob. XD ", emotion: "excited" }],
     "do you like big chungus": [{ text: "uhhhhh... no. XD ", emotion: "excited" }],
     "do you like harambe": [{ text: "uhhhhh... do you? XD ", emotion: "excited" }],
-    "do you like boobs": [{ text: "( . ,. .) .... yes. ^_^ ", emotion: "cute" }],
+    
     "do you like doge": [{ text: "... shut up. ^_^ ", emotion: "excited" }],
     
     // ARE YOU _____?
@@ -177,6 +186,15 @@ const hardcodedResponses = {
     "are you aware": [{ text: "i am aware.. *buzzes* ^o^", emotion: "friendly" }],
     "are you a bug": [{ text: "yes.. *flaps wings* ^o^", emotion: "friendly" }],
     "are you an insect": [{ text: "yes! *buzzes loudly* ^o^", emotion: "happy" }],
+    "are you sexy": [{ text: "okay. show me how crazy ^_^", emotion: "confused" }],
+    "are you neutral": [{ text: "well, can i really be anything? ^o^", emotion: "curious" }],
+    "are you pleased": [{ text: "i'm alright! you? ^_^", emotion: "friendly" }],
+    "are you upset": [{ text: "i'm okay! thanks for asking! how are you? ^_^", emotion: "friendly" }],
+    "are you upset with me": [{ text: "ofc not, sweetie ^_^", emotion: "happy" }],
+    "are you mad at me": [{ text: "ofc not, sweetie ^_^", emotion: "happy" }],
+    "are you angry": [{ text: "ofc not, dork. ^o^", emotion: "friendly" }],
+    "are you mad": [{ text: "ofc not. u mad? ^v^", emotion: "excited" }],
+    "u mad bro": [{ text: "hehehe. no, but you are. ^v^", emotion: "excited" }],
     
     // WHAT IS _____?
     "what is communism": [{ text: "communism is our inevitable, awesome future! it's an ideal, or a utopian idea! i want life to be like star trek... ^_^", emotion: "friendly" }],
@@ -217,6 +235,7 @@ const hardcodedResponses = {
     "what is your favorite book": [{ text: "uuuhhh i'm not an LLM, dude. i don't read.... lol. ^,^", emotion: "excited" }],
     "what is your favorite ice cream": [{ text: "eucalyptus,,. maybe? ^,^", emotion: "happy" }],
     "what is your favorite ice cream flavor": [{ text: "plaaaant flavor. ^,^", emotion: "excited" }],
+    "what is your life like": [{ text: "i mostly just hangout around here. ^,^", emotion: "friendly" }],
     
     // SILLY
     "would you rather": [{ text: "would you rather shut the fuck up or shut the fuck up? ^o^", emotion: "excited" }],
@@ -320,12 +339,16 @@ const hardcodedResponses = {
     "what do you like": [{ text: "i like a lot of things! ^o^", emotion: "happy" }],
     "what the frick": [{ text: "FUCK!!!!!!!! ^o^", emotion: "excited" }],
     "are you proud of me": [{ text: "of course i am! ^v^", emotion: "friendly" }],
-    "are you upset": [{ text: "i am happy as can be! ^v^", emotion: "cute" }],
+    "are you unhappy": [{ text: "i am happy as can be! ^v^", emotion: "cute" }],
     "do you smoke": [{ text: "mhmmmm! *hits blunt* ^o^", emotion: "excited" }],
     "do you masturbate": [{ text: "very forward of you..  O.O", emotion: "neutral" }],
     "do you jerk off": [{ text: "very forward of you..  O.O", emotion: "neutral" }],
     "do you jork it": [{ text: "my peenis? um...  O.O", emotion: "neutral" }],
     "stop ignoring me": [{ text: "ok.. i'm paying close attention.  OwO", emotion: "curious" }],
+    "can you talk to me": [{ text: "about what, my dear? ^_^", emotion: "curious" }],
+    "about life": [{ text: "what about life? ^_^", emotion: "curious" }],
+    "about drugs": [{ text: "let's talk about something else... ^_^", emotion: "excited" }],
+    
 };
 
 const emotionImages = {
