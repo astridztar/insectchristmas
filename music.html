@@ -18,8 +18,64 @@
     <meta content="https://insect.christmas/images/ic/icbig.gif" property="og:image" />
     <meta content="#93ff00" data-react-helmet="true" name="theme-color" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6004373384983075"
-     crossorigin="anonymous"></script>
+  <style>
+    .album-info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-family: monospace;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      text-align: center;
+      transition: opacity 0.3s ease;
+      /* Remove this ↓↓↓ */
+      /* pointer-events: none; */
+      padding: 10px;
+      box-sizing: border-box;
+      z-index: 2;
+    }
+    
+    .album:hover .album-info {
+      opacity: 1;
+    }
+    
+    .album:hover img {
+      opacity: 0.5;
+    }
+    
+    .album-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .album {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+    }
+    
+    .album-icons {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    
+    .album-icons a img {
+      width: 25px;
+      height: 25px;
+    }
+  </style>
 </head>
 <body id="body" onload="onPageLoaded()" class="chart">
     <table class="centered-container">
@@ -52,6 +108,219 @@
             <th style="width:1000px;">
                 <div class="scrollable-content" id="pageContent">
                     
+                    
+                    
+                    
+                    <div class="album-grid">
+                    
+                      <div class="album">
+                        <img src="https://insect.christmas/images/music/catAlbum4.png" alt="astrid's world" width="250">
+                        <div class="album-info">
+                          <div style="color: chartreuse;">Astrid's World (LP)</div>
+                          <div style="color: coral;">Astrid Ztar x insect.christmas</div>
+                          <div style="color: white;">May 2nd, 2025</div>
+                          <div class="album-icons">
+                            <a href="https://open.spotify.com/album/1ohjZ5oGVaXyIVa6pYd0Ub" target="_blank"><img src="https://insect.christmas/images/music/spotify-icon.png" alt="Spotify"></a>
+                            <a href="https://music.apple.com/us/album/astrids-world/1805245974" target="_blank"><img src="https://insect.christmas/images/music/apple-icon.png" alt="Apple Music"></a>
+                            <a href="https://www.youtube.com/watch?v=W09qOUtgbW0" target="_blank"><img src="https://insect.christmas/images/music/youtube-icon.png" alt="YouTube"></a>
+                            <a href="https://astridztar.bandcamp.com/album/astrids-world" target="_blank"><img src="https://insect.christmas/images/music/bandcamp-icon.png" alt="Bandcamp"></a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="album">
+                        <img src="https://insect.christmas/images/music/dog.png" alt="astrid's world" width="250">
+                        <div class="album-info">
+                          <div style="color: chartreuse;">Dog (EP)</div>
+                          <div style="color: coral;">Hyperdimensional</div>
+                          <div style="color: white;">October 31st, 2024</div>
+                          <div class="album-icons">
+                            <a href="https://open.spotify.com/album/1iXxEgCj3wIHOulnsQYxap" target="_blank"><img src="https://insect.christmas/images/music/spotify-icon.png" alt="Spotify"></a>
+                            <a href="https://music.apple.com/us/album/dog-ep/1765912580" target="_blank"><img src="https://insect.christmas/images/music/apple-icon.png" alt="Apple Music"></a>
+                            <a href="https://youtu.be/J6BrZeVWZPQ?si=Sgfdco6hW2wkftQ8" target="_blank"><img src="https://insect.christmas/images/music/youtube-icon.png" alt="YouTube"></a>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <div class="album">
+                        <img src="https://insect.christmas/images/music/ost.jpg" alt="/ost" width="250">
+                        <div class="album-info">
+                          <div style="color: chartreuse;">/ost (LP)</div>
+                          <div style="color: coral;">insect.christmas</div>
+                          <div style="color: white;">September 1st, 2024</div>
+                          <div class="album-icons">
+                            <a href="https://open.spotify.com/album/6DIwoAqxa8Ch0pTGfIpmWu" target="_blank"><img src="https://insect.christmas/images/music/spotify-icon.png" alt="Spotify"></a>
+                            <a href="https://music.apple.com/us/album/ost/1763508514" target="_blank"><img src="https://insect.christmas/images/music/apple-icon.png" alt="Apple Music"></a>
+                            <a href="https://www.youtube.com/watch?v=03XOFUQfA00" target="_blank"><img src="https://insect.christmas/images/music/youtube-icon.png" alt="YouTube"></a>
+                            <a href="https://insectchristmas.bandcamp.com/album/ost-lp" target="_blank"><img src="https://insect.christmas/images/music/bandcamp-icon.png" alt="Bandcamp"></a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="album">
+                        <img src="https://insect.christmas/images/music/lb13.jpg" alt="/ost" width="250">
+                        <div class="album-info">
+                          <div style="color: chartreuse;">Dissident Blue (LP)</div>
+                          <div style="color: coral;">Lilac Boy</div>
+                          <div style="color: white;">January 13th, 2024</div>
+                          <div class="album-icons">
+                            <a href="" target="_blank"><img src="https://insect.christmas/images/music/spotify-icon.png" alt="Spotify"></a>
+                            <a href="https://music.apple.com/us/album/dissident-blue/1712065715" target="_blank"><img src="https://insect.christmas/images/music/apple-icon.png" alt="Apple Music"></a>
+                            <a href="https://www.youtube.com/watch?v=cKQF9-1t1IE" target="_blank"><img src="https://insect.christmas/images/music/youtube-icon.png" alt="YouTube"></a>
+                            <a href="https://thelilacboy.bandcamp.com/album/dissident-blue-lp" target="_blank"><img src="https://insect.christmas/images/music/bandcamp-icon.png" alt="Bandcamp"></a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="album">
+                        <img src="https://insect.christmas/images/music/lb11.jpg" alt="/ost" width="250">
+                        <div class="album-info">
+                          <div style="color: chartreuse;">Bug2000 (EP)</div>
+                          <div style="color: coral;">Lilac Boy</div>
+                          <div style="color: white;">July 8th, 2023</div>
+                          <div class="album-icons">
+                            <a href="https://open.spotify.com/album/2khAthoJz84D3fs62yLnUW" target="_blank"><img src="https://insect.christmas/images/music/spotify-icon.png" alt="Spotify"></a>
+                            <a href="https://music.apple.com/us/album/bug2000-ep/1694209323" target="_blank"><img src="https://insect.christmas/images/music/apple-icon.png" alt="Apple Music"></a>
+                            <a href="https://www.youtube.com/watch?v=O7pw4xsmwqQ" target="_blank"><img src="https://insect.christmas/images/music/youtube-icon.png" alt="YouTube"></a>
+                            <a href="https://thelilacboy.bandcamp.com/album/bug2000-ep" target="_blank"><img src="https://insect.christmas/images/music/bandcamp-icon.png" alt="Bandcamp"></a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="album">
+                        <img src="https://insect.christmas/images/music/lb10.jpg" alt="/ost" width="250">
+                        <div class="album-info">
+                          <div style="color: chartreuse;">Neon Reaper Rebirth (LP)</div>
+                          <div style="color: coral;">Lilac Boy</div>
+                          <div style="color: white;">March 4th, 2023</div>
+                          <div class="album-icons">
+                            <a href="https://open.spotify.com/album/4m97QCnG7wceru9xW91GQd" target="_blank"><img src="https://insect.christmas/images/music/spotify-icon.png" alt="Spotify"></a>
+                            <a href="https://music.apple.com/us/album/neon-reaper-rebirth/1670610332" target="_blank"><img src="https://insect.christmas/images/music/apple-icon.png" alt="Apple Music"></a>
+                            <a href="https://www.youtube.com/watch?v=gD_53EdWrWU" target="_blank"><img src="https://insect.christmas/images/music/youtube-icon.png" alt="YouTube"></a>
+                            <a href="https://thelilacboy.bandcamp.com/album/neon-reaper-rebirth-lp" target="_blank"><img src="https://insect.christmas/images/music/bandcamp-icon.png" alt="Bandcamp"></a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="album">
+                        <img src="https://insect.christmas/images/music/lb9.jpg" alt="/ost" width="250">
+                        <div class="album-info">
+                          <div style="color: chartreuse;">Lilac Girl (LP)</div>
+                          <div style="color: coral;">Lilac Boy</div>
+                          <div style="color: white;">May 6th, 2022</div>
+                          <div class="album-icons">
+                            <a href="https://open.spotify.com/album/1eSt4WtnEBtKaZoTmfoP07" target="_blank"><img src="https://insect.christmas/images/music/spotify-icon.png" alt="Spotify"></a>
+                            <a href="https://music.apple.com/us/album/lilac-girl/1619831318" target="_blank"><img src="https://insect.christmas/images/music/apple-icon.png" alt="Apple Music"></a>
+                            <a href="https://www.youtube.com/watch?v=TGDDLLUAT8A" target="_blank"><img src="https://insect.christmas/images/music/youtube-icon.png" alt="YouTube"></a>
+                            <a href="https://thelilacboy.bandcamp.com/album/lilac-girl-lp" target="_blank"><img src="https://insect.christmas/images/music/bandcamp-icon.png" alt="Bandcamp"></a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="album">
+                        <img src="https://insect.christmas/images/music/lb8.jpg" alt="/ost" width="250">
+                        <div class="album-info">
+                          <div style="color: chartreuse;">Human Digital (LP)</div>
+                          <div style="color: coral;">Lilac Boy</div>
+                          <div style="color: white;">December 1st, 2021</div>
+                          <div class="album-icons">
+                            <a href="https://open.spotify.com/album/0syvEntKuv9vj1mpt6joBE" target="_blank"><img src="https://insect.christmas/images/music/spotify-icon.png" alt="Spotify"></a>
+                            <a href="https://music.apple.com/us/album/human-digital/1586539373" target="_blank"><img src="https://insect.christmas/images/music/apple-icon.png" alt="Apple Music"></a>
+                            <a href="https://www.youtube.com/watch?v=5FZqHl1ggxM" target="_blank"><img src="https://insect.christmas/images/music/youtube-icon.png" alt="YouTube"></a>
+                            <a href="https://thelilacboy.bandcamp.com/album/human-digital-lp" target="_blank"><img src="https://insect.christmas/images/music/bandcamp-icon.png" alt="Bandcamp"></a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="album">
+                        <img src="https://insect.christmas/images/music/lb7.jpg" alt="/ost" width="250">
+                        <div class="album-info">
+                          <div style="color: chartreuse;">ZZZ (LP)</div>
+                          <div style="color: coral;">Lilac Boy</div>
+                          <div style="color: white;">June 5th, 2021</div>
+                          <div class="album-icons">
+                            <a href="https://open.spotify.com/album/5JO8cXbYQNvw9a4zYRy5sL" target="_blank"><img src="https://insect.christmas/images/music/spotify-icon.png" alt="Spotify"></a>
+                            <a href="https://www.youtube.com/watch?v=-PxvM0HevjY" target="_blank"><img src="https://insect.christmas/images/music/youtube-icon.png" alt="YouTube"></a>
+                            <a href="https://thelilacboy.bandcamp.com/album/zzz-lp" target="_blank"><img src="https://insect.christmas/images/music/bandcamp-icon.png" alt="Bandcamp"></a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="album">
+                        <img src="https://insect.christmas/images/music/lb5.jpg" alt="/ost" width="250">
+                        <div class="album-info">
+                          <div style="color: chartreuse;">Click Here to Download a Free Car (LP)</div>
+                          <div style="color: coral;">Lilac Boy</div>
+                          <div style="color: white;">October 31st, 2020</div>
+                          <div class="album-icons">
+                            <a href="https://open.spotify.com/album/5rS3RBq9TUAerScd8iIgKw" target="_blank"><img src="https://insect.christmas/images/music/spotify-icon.png" alt="Spotify"></a>
+                            <a href="https://music.apple.com/us/album/click-here-to-download-a-free-car/1534435115" target="_blank"><img src="https://insect.christmas/images/music/apple-icon.png" alt="Apple Music"></a>
+                            <a href="https://www.youtube.com/watch?v=OM0EvXG4wj0" target="_blank"><img src="https://insect.christmas/images/music/youtube-icon.png" alt="YouTube"></a>
+                            <a href="https://thelilacboy.bandcamp.com/album/click-here-to-download-a-free-car-lp" target="_blank"><img src="https://insect.christmas/images/music/bandcamp-icon.png" alt="Bandcamp"></a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="album">
+                        <img src="https://insect.christmas/images/music/lb4.jpg" alt="/ost" width="250">
+                        <div class="album-info">
+                          <div style="color: chartreuse;">Haha (LP)</div>
+                          <div style="color: coral;">Lilac Boy</div>
+                          <div style="color: white;">April 1st, 2020</div>
+                          <div class="album-icons">
+                            <a href="https://open.spotify.com/album/2REtGbGWNlxHI3xCnPnIRA" target="_blank"><img src="https://insect.christmas/images/music/spotify-icon.png" alt="Spotify"></a>
+                            <a href="https://music.apple.com/us/album/haha/1502642274" target="_blank"><img src="https://insect.christmas/images/music/apple-icon.png" alt="Apple Music"></a>
+                            <a href="https://www.youtube.com/watch?v=dvpy8FzzwIg" target="_blank"><img src="https://insect.christmas/images/music/youtube-icon.png" alt="YouTube"></a>
+                            <a href="https://thelilacboy.bandcamp.com/album/haha-lp" target="_blank"><img src="https://insect.christmas/images/music/bandcamp-icon.png" alt="Bandcamp"></a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="album">
+                        <img src="https://insect.christmas/images/music/lb3.jpg" alt="/ost" width="250">
+                        <div class="album-info">
+                          <div style="color: chartreuse;">Silly Goose (EP)</div>
+                          <div style="color: coral;">Lilac Boy</div>
+                          <div style="color: white;">October 4th, 2019</div>
+                          <div class="album-icons">
+                            <a href="https://open.spotify.com/album/0L3jyUIPoQ36TepkGs8u9v" target="_blank"><img src="https://insect.christmas/images/music/spotify-icon.png" alt="Spotify"></a>
+                            <a href="https://music.apple.com/us/album/silly-goose-ep/1526208811" target="_blank"><img src="https://insect.christmas/images/music/apple-icon.png" alt="Apple Music"></a>
+                            <a href="https://thelilacboy.bandcamp.com/album/silly-goose-ep" target="_blank"><img src="https://insect.christmas/images/music/bandcamp-icon.png" alt="Bandcamp"></a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="album">
+                        <img src="https://insect.christmas/images/music/lb2.jpg" alt="/ost" width="250">
+                        <div class="album-info">
+                          <div style="color: chartreuse;">Garden (EP)</div>
+                          <div style="color: coral;">Lilac Boy</div>
+                          <div style="color: white;">April 1st, 2019</div>
+                          <div class="album-icons">
+                            <a href="https://open.spotify.com/album/4s1GaFtF1ShnfUuLTxkWKJ" target="_blank"><img src="https://insect.christmas/images/music/spotify-icon.png" alt="Spotify"></a>
+                            <a href="https://music.apple.com/us/album/garden-ep/1474176952" target="_blank"><img src="https://insect.christmas/images/music/apple-icon.png" alt="Apple Music"></a>
+                            <a href="https://thelilacboy.bandcamp.com/album/garden-ep" target="_blank"><img src="https://insect.christmas/images/music/bandcamp-icon.png" alt="Bandcamp"></a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="album">
+                        <img src="https://insect.christmas/images/music/lb1.jpg" alt="/ost" width="250">
+                        <div class="album-info">
+                          <div style="color: chartreuse;">Bouquet (EP)</div>
+                          <div style="color: coral;">Lilac Boy</div>
+                          <div style="color: white;">November 8th, 2018</div>
+                          <div class="album-icons">
+                            <a href="https://open.spotify.com/album/1sOYIBWVvj6Rv6Qb0479v2" target="_blank"><img src="https://insect.christmas/images/music/spotify-icon.png" alt="Spotify"></a>
+                            <a href="https://music.apple.com/us/album/bouquet-ep/1474030584" target="_blank"><img src="https://insect.christmas/images/music/apple-icon.png" alt="Apple Music"></a>
+                            <a href="https://thelilacboy.bandcamp.com/album/bouquet-ep" target="_blank"><img src="https://insect.christmas/images/music/bandcamp-icon.png" alt="Bandcamp"></a>
+                          </div>
+                        </div>
+                      </div>
+                    
+                    </div>
+                    
+                    <br>
                     <h3 style="color:slateblue;margin:0;">live show schedule:</h3><br>
                     ???
                     <br><br>
@@ -74,7 +343,7 @@
                     
                     <h1 style="color:slateblue">astrid ztar</h1>
                     <b>(2025-????)</b><br>
-                    <p>> buy/stream: <b><a href="https://astridztar.bandcamp.com/">[bandcamp]</a></b>, <b><a href="https://distrokid.com/hyperfollow/astridztarandinsectchristmas/astrids-world">[spotify]</a></b>, <b><a href="https://music.apple.com/us/artist/astrid-ztar/1763077107">[apple]</a></b>, <b><a href="https://www.youtube.com/@astridztar">[youtube]</a></b>
+                    <p>> buy/stream: <b><a href="https://astridztar.bandcamp.com/">[bandcamp]</a></b>, <b><a href="https://open.spotify.com/artist/3XNLB8r1T0dvrJ37PJBOtH">[spotify]</a></b>, <b><a href="https://music.apple.com/us/artist/astrid-ztar/1763077107">[apple]</a></b>, <b><a href="https://www.youtube.com/@astridztar">[youtube]</a></b>
                     <br>
                     > production: astrid ztar
                     </p>
@@ -83,7 +352,7 @@
                     
                     <h1 style="color:slateblue">insect.christmas</h1>
                     <b>(2024-????)</b><br>
-                    <p>> buy/stream: <b><a href="https://insectchristmas.bandcamp.com/">[bandcamp]</a></b>, <b><a href="https://open.spotify.com/artist/04XWWqv5QY6FOyxK4ZTu4I">[spotify]</a></b>
+                    <p>> buy/stream: <b><a href="https://insectchristmas.bandcamp.com/">[bandcamp]</a></b>, <b><a href="https://open.spotify.com/artist/04XWWqv5QY6FOyxK4ZTu4I">[spotify]</a></b>, <b><a href="https://music.apple.com/us/artist/insect-christmas/1715931668">[apple]</a></b>
                     <br>
                     > production: astrid ztar
                     </p>
@@ -106,7 +375,7 @@
                     
                     <h3 style="color:slateblue;margin:0;">collaborations:</h3>
                     
-                    <b style="color:yellow;">> april 4th, 2025:</b> uobh x astrid ztar - feel the same way: <b><a href="https://distrokid.com/hyperfollow/uobh1/feel-the-same-way-feat-astrid-ztar ">[pre-save]</a></b><br>
+                    <b style="color:yellow;">> april 4th, 2025:</b> uobh x astrid ztar - feel the same way: <b><a href="https://distrokid.com/hyperfollow/uobh1/feel-the-same-way-feat-astrid-ztar">[stream]</a></b><br>
                     
                     <b style="color:yellow;">> october 31st, 2024:</b> hyperdimensional - dog (ep): <b><a href="https://open.spotify.com/album/1iXxEgCj3wIHOulnsQYxap?referral=labelaffiliate">[spotify]</a></b>
                     <br>
