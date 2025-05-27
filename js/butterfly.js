@@ -1,66 +1,21 @@
 const butterflies = document.querySelectorAll('.butterfly');
-const colors = ['#7fff00', '#6a5acd', '#ffa500', '#ffff00'];
-
-let mouseX = 0;
-let mouseY = 0;
-let butterflyActive = localStorage.getItem('butterflyActive') === 'true'; // read from localStorage
 const positions = Array.from({ length: butterflies.length }, () => ({ x: 0, y: 0 }));
 
+let mouseX = window.innerWidth / 2;
+let mouseY = window.innerHeight / 2;
+let butterflyActive = localStorage.getItem('butterflyActive') === 'true';
 let animationRunning = false;
-
-/////////////////////////////////////////////////////////////////
-
-document.getElementById('toggleButterflies').addEventListener('click', function() {
-    butterflyActive = !butterflyActive;
-    localStorage.setItem('butterflyActive', butterflyActive);
-
-    if (butterflyActive) {
-        startButterflies();
-    } else {
-        stopButterflies();
-    }
-});
-
-/////////////////////////////////////////////////////////////////
-
-document.addEventListener('mousemove', (event) => {
-    if (butterflyActive) {
-        mouseX = event.clientX;
-        mouseY = event.clientY;
-    }
-});
-
-document.addEventListener('click', () => {
-    if (butterflyActive) changeColors();
-});
-
-document.addEventListener('contextmenu', (event) => {
-    if (butterflyActive) changeSizes();
-});
-
-/////////////////////////////////////////////////////////////////
-
-function getRandomColor() {
-    const hue = Math.floor(Math.random() * 360);
-    const saturation = 100;
-    const lightness = 50;
-    return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
-}
-
-/////////////////////////////////////////////////////////////////
+let sizeInterval = null;
 
 function animateTrail() {
-    if (!butterflyActive) return; // if not active, cancel
+    if (!animationRunning) return;
 
     positions.forEach((pos, index) => {
-        var num = (Math.random() * (0.1 - 0.01) + 0.01).toFixed(2);
-        if (index === 0) {
-            pos.x += (mouseX - pos.x) * num;
-            pos.y += (mouseY - pos.y) * num;
-        } else {
-            pos.x += (positions[index - 1].x - pos.x) * num;
-            pos.y += (positions[index - 1].y - pos.y) * num;
-        }
+        const speed = Math.random() * (0.1 - 0.01) + 0.01;
+        const target = index === 0 ? { x: mouseX, y: mouseY } : positions[index - 1];
+
+        pos.x += (target.x - pos.x) * speed;
+        pos.y += (target.y - pos.y) * speed;
 
         butterflies[index].style.transform = `translate(${pos.x}px, ${pos.y}px)`;
     });
@@ -68,46 +23,64 @@ function animateTrail() {
     requestAnimationFrame(animateTrail);
 }
 
-/////////////////////////////////////////////////////////////////
-
 function changeColors() {
-    butterflies.forEach((butterfly) => {
-        const randomColor = getRandomColor();
-        butterfly.style.color = randomColor;
+    butterflies.forEach(b => {
+        const hue = Math.floor(Math.random() * 360);
+        b.style.color = `hsl(${hue}, 100%, 50%)`;
     });
 }
 
 function changeSizes() {
-    butterflies.forEach((butterfly) => {
-        const randomSize = Math.random() * (32 - 12) + 12;
-        butterfly.style.fontSize = `${randomSize}px`;
+    butterflies.forEach(b => {
+        const size = Math.random() * (32 - 12) + 12;
+        b.style.fontSize = `${size}px`;
     });
 }
 
-/////////////////////////////////////////////////////////////////
+function applyButterflyVisibility() {
+    butterflies.forEach(b => {
+        b.style.visibility = butterflyActive ? 'visible' : 'hidden';
+    });
 
-let sizeInterval = null;
-
-function startButterflies() {
-    butterflies.forEach(b => b.style.display = 'block'); // show them
-    if (!animationRunning) {
-        animationRunning = true;
-        animateTrail();
+    if (butterflyActive && !sizeInterval) {
+        sizeInterval = setInterval(changeSizes, 100);
+    } else if (!butterflyActive && sizeInterval) {
+        clearInterval(sizeInterval);
+        sizeInterval = null;
     }
-    sizeInterval = setInterval(changeSizes, 100);
 }
 
-function stopButterflies() {
-    butterflies.forEach(b => b.style.display = 'none'); // hide them
-    animationRunning = false;
-    clearInterval(sizeInterval);
+function attachButterflyToggle() {
+    const btn = document.getElementById('toggleButterflies');
+    if (!btn) {
+        setTimeout(attachButterflyToggle, 100);
+        return;
+    }
+
+    btn.addEventListener('click', () => {
+        butterflyActive = !butterflyActive;
+        localStorage.setItem('butterflyActive', butterflyActive);
+        applyButterflyVisibility();
+    });
 }
 
-/////////////////////////////////////////////////////////////////
+document.addEventListener('mousemove', e => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+});
 
-// At load, check if active
-if (butterflyActive) {
-    startButterflies();
-} else {
-    stopButterflies();
+document.addEventListener('click', () => {
+    if (butterflyActive) changeColors();
+});
+
+document.addEventListener('contextmenu', e => {
+    if (butterflyActive) changeSizes();
+});
+
+applyButterflyVisibility();
+attachButterflyToggle();
+
+if (!animationRunning) {
+    animationRunning = true;
+    animateTrail();
 }

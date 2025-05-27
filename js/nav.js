@@ -47,9 +47,16 @@ function replaceNavigationContent() {
                 
                 <hr style="color:chartreuse;">
                 
+                
+                
                 <img class="kiwiPic" id="kiwi" src="" width="200" height="200">
                 <br>
                 <b id="kiwiText"></b>
+                
+                <hr style="color:chartreuse;">
+                
+                <a href="https://paypal.me/aztrosist" target="_parent"><img src="https://insect.christmas/buttons/donate.gif" style="padding:0;"></a>
+                
                 
                 
             </div>
