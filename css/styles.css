@@ -19,7 +19,7 @@
 .butterfly:nth-child(9) { opacity: 0.1; }
 
 
-#toggleRain, #toggleButterflies {
+#toggleRain, #toggleButterflies, #toggleInvert, #toggleTime {
     background-color: black;
     color: chartreuse;
     border: 1px solid chartreuse;
@@ -28,10 +28,12 @@
     cursor: url('cursors/cursorHover.png'), auto;
     transition: all 0.3s ease;
 }
-#toggleRain:hover, #toggleButterflies:hover {
+#toggleRain:hover, #toggleButterflies:hover,
+#toggleInvert:hover, #toggleTime:hover{
     border-color: yellow;
 }
-#toggleRain:active, #toggleButterflies:active {
+#toggleRain:active, #toggleButterflies:active,
+#toggleInvert:active, #toggleTime:active{
     border-color: slateblue;
 }
 
@@ -331,9 +333,30 @@ th:empty, td:empty {
     }
 }
 
+#topbar h1 #rainbow {
+    font-size: 2rem;
+    padding: 0px;
+    margin:0px;
+}
 
 /* mobile specific adjustments */
 @media, (max-width: 1280px) {
+    
+    #topbar {
+        display: block;
+        width: 100%;
+        max-width: 100vw;
+        box-sizing: border-box;
+        padding: 0 10px;
+        font-size: 0.5rem;
+    }
+    
+    #topbar h1 #rainbow {
+        font-size: 0.8rem;
+        padding: 0px;
+        margin:0px;
+    }
+    
     .scrollable-content, .p1, .mainbarLeft, .rainbow, .topAss, .h1Rainbow, .smallMargins {
         
         max-width: 60vw;     
@@ -481,4 +504,98 @@ html {
     50% {
         background-position: 100% 50%;
     }
+}
+
+#systemClock {
+  display: none;
+}
+
+#trail {
+  display: none;
+}
+
+#topbar {
+  display: inline-block;
+  max-width: 750px;
+  padding: 0 10px 5px 10px;
+  margin: 0;
+  line-height: 1.2;
+  vertical-align: top;
+}
+
+#topbar table {
+  width: 100%;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+/*  invert mode / light mode */
+
+.invert-mode {
+    color: #1a1a1a;
+    background-color: transparent;
+}
+
+.invert-mode table,
+.invert-mode th,
+.invert-mode td,
+.invert-mode tr {
+    background-color: rgba(185, 185, 185, 0.92);
+    color: #1a1a1a;
+    border-color: #777;
+}
+
+.invert-mode a {
+    color: #004488;
+}
+
+.invert-mode a:hover {
+    background-color: #bcbcbc;
+    color: #000;
+}
+
+.invert-mode .scrollable-content,
+.invert-mode .scrollable-content2 {
+    background-color: rgba(195, 195, 195, 0.85);
+    color: #1a1a1a;
+}
+
+.invert-mode hr {
+    color: black;
+}
+
+.invert-mode #toggleRain,
+.invert-mode #toggleButterflies,
+.invert-mode #toggleInvert,
+.invert-mode #toggleTime{
+    background-color: #c4c4c4;
+    color: #111;
+    border: 1px solid #888;
+}
+
+.invert-mode #toggleRain:hover,
+.invert-mode #toggleButterflies:hover,
+.invert-mode #toggleInvert:hover,
+.invert-mode #toggleTime:hover{
+    border-color: #555;
+}
+
+.invert-mode h1, 
+.invert-mode h2, 
+.invert-mode h3, 
+.invert-mode h4 {
+    color: #111;
+}
+
+.invert-mode .p1 {
+    background-color: rgba(200, 200, 200, 0.85);
+}
+
+.invert-mode .chart {
+    color: #1a1a1a;
+}
+
+.invert-mode #stars {
+    filter: brightness(0.65) contrast(0.95) saturate(0.8);
 }
